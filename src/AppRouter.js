@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import DidYouKnow from './pages/DidYouKnow';
-import Quiz from './pages/Quiz';
+import Quiz from './pages/WeeklyQuiz';
 import Youtube from './pages/Youtube';
 import AmazonBooks from './pages/AmazonBooks';
 
