@@ -9,6 +9,19 @@
 //  Include a link to the recommended book with your affiliate code.
 //  Use a visually engaging format for presenting the book information.
 
+// Set Up Google Sheets API:
+
+// Go to the Google Cloud Console.
+// Create a new project or select an existing one.
+// Enable the Google Sheets API for your project.
+// Create credentials (OAuth client ID) to authenticate your API requests.
+// Install Necessary Libraries:
+
+// If you are using a programming language, you might need to install the relevant client library. For example, if you're using Python, you can install the gspread library.
+// Write Code to Fetch Data:
+
+// Write code using the Google Sheets API or the client library to fetch data from your Google Sheet. The data can be retrieved in the form of a JSON object.
+
 
 // Pseudocode
 
