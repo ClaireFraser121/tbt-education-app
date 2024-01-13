@@ -1,6 +1,6 @@
 // Amazon Book Page:
 
-// Recommended Book Section:
+// Recommended curated Book Section:
 //  Design a section to display a recommended Amazon book.
 //  Integrate the Amazon Product Advertising API for book recommendations.
 //  Ensure the API affiliate link is securely implemented.
