@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import Contact from './components/contact/Contact';
-import DidYouKnow from './components/didYouKnow/DidYouKnow';
-import WeeklyQuiz from './components/weeklyQuiz/WeeklyQuiz';
-import YouTube from './components/youTube/YouTube';
-import AmazonBook from './components/amazonBook/AmazonBook';
+import FunFacts from './components/funFacts/FunFacts';
+import WeeklyQuiz from './components/weekQuiz/WeeklyQuiz';
+import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
+import RighteousReading from './components/righteousReading/RighteousReading';
 import Nav from './components/common/Nav';
 
 const App = () => {
@@ -18,10 +18,10 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-          <Route path="/didYouKnow" component={DidYouKnow} />
+          <Route path="/funFacts" component={FunFacts} />
           <Route path="/weeklyQuiz" component={WeeklyQuiz} />
-          <Route path="/youTube" component={YouTube} />
-          <Route path="/amazonBook" component={AmazonBook} />
+          <Route path="/didYouKnowTV" component={DidYouKnowTV} />
+          <Route path="/righteousReading" component={RighteousReading} />
         </Switch>
       </div>
     </Router>
