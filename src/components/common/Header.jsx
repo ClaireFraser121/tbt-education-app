@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header>
-      <h1>Black History Education App</h1>
+      <h1>TBT Education App</h1>
     </header>
   );
 }

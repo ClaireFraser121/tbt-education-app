@@ -27,7 +27,7 @@ const About = () => {
       <main className="about-content">
         <h2>About Us</h2>
         <p>
-          Welcome to the Black History Education App! Our mission is to provide engaging and educational content
+          Welcome to the TBT Education App! Our mission is to provide engaging and educational content
           related to Black History. Explore interesting facts, take weekly quizzes, and discover recommended books
           on Amazon.
         </p>

@@ -1,5 +1,5 @@
-import { useState } from 'react' // might need to change to just react
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// App.jsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import Contact from './components/contact/Contact';
@@ -14,15 +14,15 @@ const App = () => {
     <Router>
       <div>
         <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/funFacts" component={FunFacts} />
-          <Route path="/weeklyQuiz" component={WeeklyQuiz} />
-          <Route path="/didYouKnowTV" component={DidYouKnowTV} />
-          <Route path="/righteousReading" component={RighteousReading} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/funFacts" element={<FunFacts />} />
+          <Route path="/weeklyQuiz" element={<WeeklyQuiz />} />
+          <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
+          <Route path="/righteousReading" element={<RighteousReading />} />
+        </Routes>
       </div>
     </Router>
   );

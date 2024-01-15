@@ -17,7 +17,7 @@ const Home = () => {
         Featured Section:
         Highlight key features of the app.
         Include engaging visuals or icons. */}
-        <h2>Welcome to the Black History Education App!</h2>
+        <h2>Welcome to the TBT Education App!</h2>
       </main>
       <Footer />
     </div>
