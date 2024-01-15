@@ -32,3 +32,12 @@
 //     PRINT 'User\'s Answers:'
 //     FOR EACH answer IN userAnswers:
 //         PRINT answer
+
+// WeeklyQuiz.jsx
+import React from 'react';
+
+const WeeklyQuiz = () => {
+    // Component code
+};
+
+export default WeeklyQuiz;
