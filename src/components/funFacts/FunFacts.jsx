@@ -24,3 +24,19 @@
 //     PRINT 'Did You Know Black History Facts'
 //     FOR EACH fact IN facts:
 //         PRINT fact
+
+// FunFacts.jsx
+import React from 'react';
+import Tiles from './Tiles'; // Adjust the path based on your project structure
+
+const FunFacts = () => {
+  return (
+    <div>
+      {/* Other content */}
+      <Tiles />
+      {/* Other content */}
+    </div>
+  );
+};
+
+export default FunFacts;
