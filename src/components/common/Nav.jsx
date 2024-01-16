@@ -14,7 +14,6 @@ const Nav = () => {
         <li><Link to="/weeklyQuiz">Weekly Quiz</Link></li>
         <li><Link to="/didYouKnowTV">Did You Know TV</Link></li>
         <li><Link to="/righteousReading">Righteous Reading</Link></li>
-        <li><Link to="/apiTest">API Test</Link></li> {/* New route for the Wikipedia API test */}
       </ul>
     </nav>
   );
