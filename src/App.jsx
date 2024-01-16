@@ -4,9 +4,10 @@ import Home from './components/home/Home';
 import About from './components/About/About';
 import Contact from './components/contact/Contact';
 import FunFacts from './components/funFacts/FunFacts';
-import WeeklyQuiz from './components/weekQuiz/WeeklyQuiz';
+import WeeklyQuiz from './components/weeklyQuiz/WeeklyQuiz';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
+import WikipediaApiTest from "./components/ApiTests/MediaWikiTest";
 import Nav from './components/common/Nav';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/weeklyQuiz" element={<WeeklyQuiz />} />
           <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
           <Route path="/righteousReading" element={<RighteousReading />} />
+          <Route path='/apiTest' element={<WikipediaApiTest />} />
         </Routes>
       </div>
     </Router>
