@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 TBT History Education App</p>
+      <p>&copy; 2024 TBT Education App</p>
     </footer>
   );
 }

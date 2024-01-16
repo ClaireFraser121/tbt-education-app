@@ -29,7 +29,7 @@ const About = () => {
         <p>
           Welcome to the TBT Education App! Our mission is to provide engaging and educational content
           related to Black History. Explore interesting facts, take weekly quizzes, and discover recommended books
-          on Amazon.
+          on Amazon. 
         </p>
         <p>
           Feel free to reach out to us with any questions or suggestions through our <a href="/contact">Contact</a> page.
