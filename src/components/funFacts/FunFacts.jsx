@@ -27,7 +27,7 @@
 
 // FunFacts.jsx
 import React from 'react';
-import Tiles from './Tiles'; // Adjust the path based on your project structure
+import Tiles from './Cards'; // Adjust the path based on your project structure
 
 const FunFacts = () => {
   return (

@@ -1,9 +1,9 @@
 // Example: Tiles.jsx
 import React from 'react';
-import './Tiles.css';
+import './Cards.css';
 
-const Tiles = () => {
+const Cards = () => {
   // Component code
 };
 
-export default Tiles;
+export default Cards;
