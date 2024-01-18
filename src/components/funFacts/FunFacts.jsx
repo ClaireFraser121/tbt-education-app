@@ -1,50 +1,53 @@
-// "Did You Know" Facts Page:
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Cards from './Cards'; // Make sure the path to Cards.jsx is correct
+import './Cards.css';
 
-// Display Section:
-//  Design a section to display Black History facts.
-//  Integrate the "Did You Know" Black History Facts API.
-//  Implement a visually appealing layout for the facts.
-
-// Random Fact Feature:
-//  Include a feature to display a random fact.
-//  Add a button to fetch and display a new random fact.
-
-
-// Pseudocode
-// # Did You Know Black History Facts API Generator
-
-// FUNCTION fetchBlackHistoryFacts():
-//     facts = API_CALL('https://www.blackhistoryapi.io/')
-//     RETURN facts
-
-// # Main component
-// FUNCTION DidYouKnowPage():
-//     facts = fetchBlackHistoryFacts()
-
-//     PRINT 'Did You Know Black History Facts'
-//     FOR EACH fact IN facts:
-//         PRINT fact
-
-// FunFacts.jsx
-import React from 'react';
-import Tiles from './Tiles'; // Adjust the path based on your project structure
 
 const FunFacts = () => {
+  const [randomFact, setRandomFact] = useState('');
 
-const getRandomFact = async () => {
-  try {
-      const response = await fetch('https://rest.blackhistoryapi.io/fact/random', {
-        method: "GET",
-        headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj'},
-        contentType: 'application/json',
+  useEffect(() => {
+    // Fetch a random fact when the component mounts
+    getRandomFact();
+  }, []);
+
+  const getRandomFact = async () => {
+    try {
+      const response = await axios.get('https://rest.blackhistoryapi.io/fact/random', {
+        headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj' },
       });
-      const data = await response.json();
-      console.log(data)
-  } catch (error) {
+  
+      console.log('API Response:', response); // Log the response to see what data is returned
+  
+      const data = response.data.Results[0];
+  
+      if (data) {
+        const factText = data.text || 'No fact available.';
+        setRandomFact(factText);
+      } else {
+        setRandomFact('No fact available.');
+      }
+    } catch (error) {
       console.error('Error fetching random fact', error);
-  }
-}
-getRandomFact()
+      setRandomFact('Failed to fetch random fact.');
+    }
+  };
+  
+
+  return (
+    <div>
+      {/* Display the random fact */}
+      <p>{randomFact}</p>
+
+      {/* Display the card with the random fact */}
+      <Cards fact={randomFact} onClick={getRandomFact} />
+      
+      {/* Button to fetch a new random fact */}
+      <button onClick={getRandomFact}>Get Random Fact</button>
+    </div>
+  );
 };
+
 
 export default FunFacts;
