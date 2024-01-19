@@ -1,33 +1,40 @@
-/* Cards.css */
+/* ffCards.css */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .card {
   width: 200px;
   height: 300px;
   perspective: 1000px;
-  position: absolute;
-  top: 62%;
-  left: 50%;
+  position: relative;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease, background-color 0.3s ease; /* Add transition for background color */
-  border-radius: 10px; /* Set the border-radius for rounded corners */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  border-radius: 10px;
 }
 
 .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
-  border-radius: 10px; /* Apply the same border-radius to the border for consistency */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .front {
   transform: rotateY(0deg);
   backface-visibility: hidden; /* Hide the front during the flip */
   background-color: rgb(96, 114, 249);
-  background-image: url('../../../public/assets/images/coolKid.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-image: url('../../images/coolKid.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   color: whitesmoke;
@@ -35,6 +42,16 @@
   padding: 20px; /* Adjust the value as needed for your desired spacing */
   box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
   border: 5px solid rgba(214, 223, 223, 0.996);
+}
+
+.front,
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .back {
@@ -46,23 +63,28 @@
   border: 5px solid rgba(220, 233, 233, 0.604);
 }
 
+.back p {
+  font-size: 14px; /* Set a default font size */
+  max-height: 100%; /* Limit the height of the text */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Use ellipsis for overflow text */
+}
+
 .flipped {
   transform: rotateY(180deg);
   backface-visibility: visible;
   background-color: black; 
 }
 
-/* Cards.css */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
 }
 
 .card-container {
-  width: 200px; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  width: 200px;
+  height: 300px;
   perspective: 1000px;
 }
-

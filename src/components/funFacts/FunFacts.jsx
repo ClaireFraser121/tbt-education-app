@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Cards from './Cards'; // Make sure the path to Cards.jsx is correct
-import './Cards.css';
+import Cards from './FFCards'; 
+import './ffCards.css';
+import PersonDeck from './KeyPeople/PersonDeck';
+// import './KeyPeople/personCard.css';
 
 
 const FunFacts = () => {
@@ -45,6 +47,7 @@ const FunFacts = () => {
       
       {/* Button to fetch a new random fact */}
       <button onClick={getRandomFact}>Get Random Fact</button>
+      <PersonDeck />
     </div>
   );
 };
