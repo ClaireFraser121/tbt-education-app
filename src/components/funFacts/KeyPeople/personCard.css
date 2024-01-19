@@ -1,4 +1,10 @@
 /* personCard.css */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
 
 .card-container {
   display: grid;
@@ -9,9 +15,12 @@
 
 .card {
   position: relative;
-  width: 150px; /* Fixed width for the card */
-  height: 200px; /* Fixed height for the card */
+  width: 200px; /* Fixed width for the card */
+  height: 300px; /* Fixed height for the card */
   perspective: 1000px;
+  /* transform: translate(-50%, -50%); */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  border-radius: 10px;
   cursor: pointer;
 }
 
