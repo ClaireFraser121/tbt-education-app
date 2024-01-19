@@ -3,6 +3,7 @@ import axios from 'axios';
 import Cards from './FFCards'; 
 import './ffCards.css';
 import PersonDeck from './KeyPeople/PersonDeck';
+import './FunFacts.css';
 // import './KeyPeople/personCard.css';
 
 

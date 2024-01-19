@@ -1,7 +1,7 @@
 // PersonCard.jsx
 import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import './personCard.css'; // Import the CSS file
+// import './personCard.css'; 
 
 const PersonCard = ({ fact }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -19,13 +19,14 @@ const PersonCard = ({ fact }) => {
       animate={controls}
     >
       <motion.div className="card-face front">
+      <p>{fact.name}</p>
         <p>Click to Flip</p>
         {/* Display person's name or any other info on the front */}
       </motion.div>
       {isFlipped && (
         <motion.div className="card-face back">
           {/* Display API text on the back */}
-          <p style={{ color: 'black' }}>{fact && fact.text}</p>
+          <p style={{ color: 'black' }}>{fact.text}</p>
         </motion.div>
       )}
     </motion.div>

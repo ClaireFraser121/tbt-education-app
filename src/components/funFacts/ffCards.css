@@ -1,4 +1,11 @@
 /* ffCards.css */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -11,7 +18,7 @@
   height: 300px;
   perspective: 1000px;
   position: relative;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   transition: transform 0.2s ease, background-color 0.3s ease;
   border-radius: 10px;
 }
@@ -33,7 +40,7 @@
 .front {
   transform: rotateY(0deg);
   backface-visibility: hidden; /* Hide the front during the flip */
-  background-color: rgb(96, 114, 249);
+  /* background-color: rgb(96, 114, 249); */
   background-image: url('../../images/coolKid.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
