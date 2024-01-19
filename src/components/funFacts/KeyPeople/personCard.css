@@ -1,0 +1,54 @@
+/* personCard.css */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows */
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 150px; /* Fixed width for the card */
+  height: 200px; /* Fixed height for the card */
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Adjust border-radius for rounded corners */
+  overflow: hidden;
+}
+
+.front,
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.back {
+  background-color: #f0f0f0;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+
+.back p {
+  font-size: 14px; /* Set a default font size */
+  max-height: 100%; /* Limit the height of the text */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Use ellipsis for overflow text */
+}
+
+/* Add more specific styling if needed */
