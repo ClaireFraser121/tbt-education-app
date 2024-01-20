@@ -12,8 +12,10 @@ import Nav from './components/common/Nav';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div> 
         <Nav />
+        <div><h1 className="text-3xl font-bold underline">
+      Hello world! </h1></div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,9 +25,12 @@ const App = () => {
           <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
           <Route path="/righteousReading" element={<RighteousReading />} />
         </Routes>
-      </div>
+      </div> 
+      
+     
     </Router>
   );
 }
+
 
 export default App;
