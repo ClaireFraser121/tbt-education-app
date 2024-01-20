@@ -19,8 +19,8 @@ const PersonCard = ({ fact }) => {
       animate={controls}
     >
       <motion.div className="card-face front">
-      <p>{fact.name}</p>
-        <p>Click to Flip</p>
+        <p>{fact.name}</p>
+        <p title={fact.text}>Click to Flip</p>
         {/* Display person's name or any other info on the front */}
       </motion.div>
       {isFlipped && (
