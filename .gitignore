@@ -24,3 +24,6 @@ package-lock.json
 *.sln
 *.sw?
 .env
+
+# Contentlayer
+.contentlayer
