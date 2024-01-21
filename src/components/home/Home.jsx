@@ -20,7 +20,7 @@ const Home = () => {
         Include engaging visuals or icons. */}
         <h2>Welcome to the TBT Education App!</h2>
       </main>
-      <Footer />
+      
     </div>
   );
 }
