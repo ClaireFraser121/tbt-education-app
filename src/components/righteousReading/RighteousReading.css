@@ -1,0 +1,35 @@
+/* src/components/righteousReading/RighteousReading.css */
+
+.righteous-reading-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    background-color: #1f2937; /* Tailwind color: bg-gray-800 */
+    color: #fff; /* Tailwind color: text-white */
+  }
+  
+  .feature-book-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feature-book-card-text {
+    width: 50%;
+  }
+  
+  .feature-book-card img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .small-book-card {
+    background-color: #fff; /* Tailwind color: bg-white */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Add more custom styles as needed */
+  
