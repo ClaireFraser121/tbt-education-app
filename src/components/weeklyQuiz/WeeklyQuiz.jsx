@@ -35,11 +35,14 @@
 
 // WeeklyQuiz.jsx
 import React from 'react';
-import API from '../../utils/API';
+import Question from './Question';
 
-function WeeklyQuiz() {
-API.getQuizQuestions()
-
-};
-
+const WeeklyQuiz = () => {
+return (
+    <div>
+    <h2>Weekly Quiz</h2>
+    <Question content="Who is Barack Obama?" />
+    </div>
+);
+}
 export default WeeklyQuiz;
