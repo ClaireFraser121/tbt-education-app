@@ -40,10 +40,22 @@
 //     LINK_TO_BOOK(bookLink)
 
 // RighteousReading.jsx
+// src/components/righteousReading/RighteousReading.jsx
 import React from 'react';
+import FeatureBookCard from './FeatureBookCard';
+import SmallBookCard from './SmallBookCard';
 
 const RighteousReading = () => {
-    // Component code
+  return (
+    <div className="righteous-reading-container">
+      <FeatureBookCard />
+      <div className="sm:flex justify-between">
+        <SmallBookCard />
+        <SmallBookCard />
+        <SmallBookCard />
+      </div>
+    </div>
+  );
 };
 
 export default RighteousReading;
