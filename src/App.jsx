@@ -18,11 +18,11 @@ import Footer from './components/common/Footer';
 
 const App = () => {
   return (
-    <Router>
-      <GlobalLayout>
-        <SectionContainer>
+    <Router >
+      <GlobalLayout> 
+        <SectionContainer className="m-0 p-0">
+          <Nav />
           <div>
-            <Nav />
             <Routes>
               <Route path="/container" element={<SectionContainer />} />
               <Route path="/" element={<Home />} />
@@ -33,9 +33,9 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
-            <Footer />
           </div>
-        </SectionContainer>
+          <Footer />
+        </SectionContainer>   
       </GlobalLayout>
     </Router>
   );
