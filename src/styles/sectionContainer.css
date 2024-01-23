@@ -1,0 +1,16 @@
+/* sectionContainer.css */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-container-with-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; /* Adjust this value as needed for padding around the rest of the page */
+}
+
+.section-container-with-nav > nav {
+  padding: 0; /* Remove padding specifically for the Nav component */
+}
