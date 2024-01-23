@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FlipCard from './FlipCard';
-import historicalPeopleData from './historicalPeopleData'; // Updated import
+import historicalPeopleData from './historicalPeopleData';
+ // Updated import
 
 const FlipDeck = () => {
   const [personFacts, setPersonFacts] = useState([]);
@@ -12,18 +13,18 @@ const FlipDeck = () => {
     const fetchPersonFacts = async () => {
       const people = historicalPeopleData.map((person) => person.name);
 
-      const fetchDataPromises = people.map(async (personName) => {
+      const fetchDataPromises = historicalPeopleData.map(async ({name, imageFileName}) => {
         try {
-          const response = await axios.get(`https://rest.blackhistoryapi.io/fact?people=${personName}`, {
+          const response = await axios.get(`https://rest.blackhistoryapi.io/fact?people=${name}`, {
             headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj' },
           });
 
           const facts = response.data.Results;
           const selectedFact = facts[Math.floor(Math.random() * facts.length)];
-          return { name: personName, fact: selectedFact.text, tags: selectedFact.tags };
+          return { name: name, imagePath:"src/components/funFacts/assets/images/"+imageFileName, fact: selectedFact.text, tags: selectedFact.tags };
         } catch (error) {
-          console.error(`Error fetching person facts for ${personName}`, error);
-          return { name: personName, fact: 'Error fetching data', tags: [] };
+          console.error(`Error fetching person facts for ${name}`, error);
+          return { name: name, fact: 'Error fetching data', tags: [] };
         }
       });
 
@@ -48,7 +49,7 @@ const FlipDeck = () => {
     <div className="grid-container">
       <div className="card-container">
         {personFacts.map((person, index) => (
-          <FlipCard key={index} person={person} imageFolderPath="/assets/images" />
+          <FlipCard key={index} person={person} />
         ))}
       </div>
     </div>
