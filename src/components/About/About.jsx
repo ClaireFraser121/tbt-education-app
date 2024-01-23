@@ -17,7 +17,6 @@
 // About.jsx
 import React from 'react';
 import Header from '../common/Header';
-import Footer from '../common/Footer';
 import './About.css';
 
 const About = () => {
@@ -35,7 +34,6 @@ const About = () => {
           Feel free to reach out to us with any questions or suggestions through our <a href="/contact">Contact</a> page.
         </p>
       </main>
-      <Footer />
     </div>
   );
 }

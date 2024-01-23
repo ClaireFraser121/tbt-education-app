@@ -14,6 +14,7 @@ import './index.css';
 import './styles/tailwind.css';
 import './styles/SectionContainer.css';
 import './styles/Nav.css';
+import Footer from './components/common/Footer';
 
 const App = () => {
   return (
