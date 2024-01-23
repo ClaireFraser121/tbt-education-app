@@ -8,6 +8,7 @@ import WeeklyQuiz from './components/weeklyQuiz/WeeklyQuiz';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
 import Nav from './components/common/Nav';
+import Footer from './components/common/Footer';
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
           <Route path="/righteousReading" element={<RighteousReading />} />
         </Routes>
+        <Footer/>
+        
       </div> 
       
      

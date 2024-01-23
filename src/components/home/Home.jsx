@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import './Home.css';
+import Nav from '../common/Nav';
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
         Include engaging visuals or icons. */}
         <h2>Welcome to the TBT Education App!</h2>
       </main>
-      <Footer />
+      
     </div>
   );
 }

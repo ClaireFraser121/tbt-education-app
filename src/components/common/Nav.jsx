@@ -22,24 +22,26 @@ const Nav = () => {
         <div className={`${
               isOpen ? 'block' : 'hidden'
             } lg:flex lg:items-center lg:w-auto`}>
-          <a href="#responsive-header" className=" whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
+
+
+          <Link to="/home" className=" whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
             Home
-          </a>
-          <a href="#responsive-header" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
+          </Link>
+          <Link to="/About" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
             About
-          </a>
-          <a href="#responsive-header" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
+          </Link>
+          <Link to="/DidYouKnowTV" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
             Did You Know TV
-          </a>
-          <a href="#responsive-header" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
+          </Link>
+          <Link to="/FunFacts" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
             Fun Facts
-          </a>
-          <a href="#responsive-header" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
+          </Link>
+          <Link to="/RighteousReading" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db]  mx-2">
             Righteous Reading
-          </a>
-          <a href="#responsive-header" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db] text-sm mx-2">
+          </Link>
+          <Link to="/WeeklyQuiz" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#f7f1db] text-sm mx-2">
             Weekly Quiz
-          </a>
+          </Link>
           
         </div>
       </div>
