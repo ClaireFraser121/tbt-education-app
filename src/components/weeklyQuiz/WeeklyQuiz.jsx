@@ -34,15 +34,25 @@
 //         PRINT answer
 
 // WeeklyQuiz.jsx
-import React from 'react';
-import Question from './Question';
+import React, { useState, useEffect } from 'react';
+import API from '../../utils/API';
 
-const WeeklyQuiz = () => {
-return (
-    <div>
-    <h2>Weekly Quiz</h2>
-    <Question content="Who is Barack Obama?" />
-    </div>
-);
+function WeeklyQuiz() {
+    const [quizQuestions, setQuizQuestions] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const data = await API.getQuizQuestions();
+            setQuizQuestions(data);
+          } catch (error) {
+            console.error('Error fetching quiz questions:', error);
+          }
+        };
+
+        fetchData();
+    }, []);
+
+    console.log(quizQuestions);
 }
 export default WeeklyQuiz;
