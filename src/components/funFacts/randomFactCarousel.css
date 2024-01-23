@@ -1,0 +1,76 @@
+/* randomFactCarousel.css */
+/* Style for the carousel container */
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the fact card */
+.fact-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out; /* Add a fade-in effect */
+}
+
+/* Style for the fact card heading (h3) */
+.fact-card h3 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+/* Style for the fact card tags (p) */
+.fact-card p {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 10px;
+}
+
+/* Style for the fact card content (p) */
+.fact-card p.content {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+/* Style for the "Learn More" link */
+.fact-card a {
+  color: #4299e1;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Style for the "Suprise Me" button */
+.refresh-button {
+  background-color: #48bb78;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover style for the "Suprise Me" button */
+.refresh-button:hover {
+  background-color: #38a169;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .fact-card {
+    padding: 15px;
+  }
+}

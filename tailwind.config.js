@@ -14,15 +14,12 @@ module.exports = {
         'Green': '#6dcf98',
         'Red': '#e76d71',
         'Neutral': '#f7f1db'
-
       },
-      fontFamily: {
-        
-      },
+      fontFamily: {},
       spacing: {
         '5px': '5px',
       }
     },
   },
   plugins: [require('flowbite/plugin')],
-}
+};
