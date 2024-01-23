@@ -5,6 +5,9 @@ import RandomFactCarousel from './RandomFactCarousel';
 import SearchBar from './SearchBar';
 import FlipDeck from './FlipDeck'; // Updated import
 import './funFacts.css';
+import './historicalPeopleData';
+
+
 
 const FunFacts = () => {
   // Data for historical people
