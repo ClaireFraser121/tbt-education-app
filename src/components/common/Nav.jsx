@@ -1,8 +1,7 @@
-// Nav.jsx
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "./../../images/tbt_logo.png";
-import '../common/Nav.css';
-import React, { useState } from 'react';
+import './../../styles/Nav.css';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
