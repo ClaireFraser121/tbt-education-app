@@ -33,6 +33,7 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
+            <Footer />
           </div>
         </SectionContainer>
       </GlobalLayout>
