@@ -35,9 +35,11 @@
 
 // WeeklyQuiz.jsx
 import React from 'react';
+import API from '../../utils/API';
 
-const WeeklyQuiz = () => {
-    // Component code
+function WeeklyQuiz() {
+API.getQuizQuestions()
+
 };
 
 export default WeeklyQuiz;
