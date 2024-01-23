@@ -42,7 +42,7 @@
   backface-visibility: hidden;
   /* background-image: url(${imageUrl}); */
   /* background-image: url('../../images/little-boy-with-his-eyes-closed.jpg');   */
- background-image: url(${../../assets/images/});
+  /* background-image: url(${../../assets/images/}); */ 
   background-size: cover;
   background-position: center;
   color: rgb(227, 109, 109);
