@@ -40,9 +40,6 @@
 .front {
   transform: rotateY(0deg);
   backface-visibility: hidden;
-  /* background-image: url(${imageUrl}); */
-  /* background-image: url('../../images/little-boy-with-his-eyes-closed.jpg');   */
-  /* background-image: url(${../../assets/images/}); */ 
   background-size: cover;
   background-position: center;
   color: rgb(227, 109, 109);
@@ -66,12 +63,14 @@
   transform: rotateY(180deg);
   backface-visibility: visible;
   background-color: rgb(246, 244, 224);
+  
   padding: 20px;
   box-sizing: border-box;
   border: 5px solid rgba(220, 233, 233, 0.604);
 }
 
 .back p {
+  color: rgb(227, 109, 109);
   font-size: 14px;
   max-height: 100%;
   overflow: hidden;
@@ -81,7 +80,7 @@
 .flipped {
   transform: rotateY(180deg);
   backface-visibility: visible;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .container {

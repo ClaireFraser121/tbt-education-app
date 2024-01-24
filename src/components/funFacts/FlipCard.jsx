@@ -57,7 +57,7 @@ const FlipCard = ({ key, person }) => {
       </motion.div>
       {isFlipped && (
         <motion.div className="card-face back">
-          <p style={{ color: 'black' }}>{fact}</p>
+          <p style={{ color: 'Black' }}>{fact}</p>
         </motion.div>
       )}
     </motion.div>

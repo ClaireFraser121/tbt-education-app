@@ -12,9 +12,9 @@ const historicalPeopleData = [
   { id: 9, name: 'Carter G. Woodson', imageFileName: 'CarterGWoodson.png' },
   { id: 10, name: 'Shirley Chisholm', imageFileName: 'ShirleyChisholm.png' },
   { id: 11, name: 'Alice Walker', imageFileName: 'AliceWalker.png' },
-  { id: 12, name: 'John Lewis', imageFileName: 'coolKid.png' },
-  { id: 13, name: 'Benjamin Banneker', imageFileName: 'coolKid.png' },
-  { id: 14, name: 'Nelson Rolihlahla Mandela', imageFileName: 'coolKid.png' },
+  { id: 12, name: 'John Lewis', imageFileName: 'JohnRobertLewis.png' },
+  { id: 13, name: 'Benjamin Banneker', imageFileName: 'BenjaminBanneker.png' },
+  { id: 14, name: 'Nelson Rolihlahla Mandela', imageFileName: 'NelsonMandela.png' },
 ];
 
 export default historicalPeopleData;
