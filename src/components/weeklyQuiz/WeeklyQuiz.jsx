@@ -1,58 +1,41 @@
-// Weekly Quiz Page:
-
-// Quiz Questions:
-//  Create a set of ten quiz questions based on Black History.
-//  Design a layout to present the questions.
-// 
-// Answer Options:
-//  Provide multiple-choice answer options for each question.
-//  Ensure a clear and user-friendly format for answering.
-
-// User Interaction:
-//  Implement a system to track user answers.
-//  Display correct answers after submission.
-
-
-// Pseudocode
-// # Weekly Quiz
-
-// FUNCTION handleAnswer(questionIndex, selectedOption):
-//     SET userAnswers[questionIndex] = selectedOption
-
-// # Main component
-// FUNCTION QuizPage():
-//     SET userAnswers = []
-
-//     PRINT 'Weekly Quiz'
-//     FOR EACH question IN quizQuestions:
-//         PRINT question.text
-//         FOR EACH option IN question.options:
-//             BUTTON 'Option', onClick=handleAnswer(questionIndex, option)
-
-//     PRINT 'User\'s Answers:'
-//     FOR EACH answer IN userAnswers:
-//         PRINT answer
-
-// WeeklyQuiz.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import API from '../../utils/API';
+import Quiz from './Quiz';
 
 function WeeklyQuiz() {
-    const [quizQuestions, setQuizQuestions] = useState([]);
+  const [quizQuestions, setQuizQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const data = await API.getQuizQuestions();
-            setQuizQuestions(data);
-          } catch (error) {
-            console.error('Error fetching quiz questions:', error);
-          }
-        };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await API.getQuizQuestions();
+        const formattedData = data.map((item) => ({
+          questionId: item.QuestionID,
+          question: item.Question,
+          answers: [item.OptionA, item.OptionB, item.OptionC],
+          correctAnswer: item.Correct,
+        }));
+        setQuizQuestions(formattedData);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching quiz questions:', error);
+        setLoading(false);
+      }
+    };
 
-        fetchData();
-    }, []);
+    fetchData();
+  }, []);
 
-    console.log(quizQuestions);
+  return (
+    <div>
+      {loading ? (
+        <p className="mx-auto max-w-md mt-4">Loading questions...</p>
+      ) : (
+        <Quiz quizQuestions={quizQuestions} />
+      )}
+    </div>
+  );
 }
+
 export default WeeklyQuiz;

@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import axios from 'axios';
-
 import './flipCard.css';
 
 const FlipCard = ({ key, person }) => {
@@ -55,6 +54,7 @@ const FlipCard = ({ key, person }) => {
             height: '100%',
           }}
         />
+        
         <p>{person.name}</p>
       </motion.div>
       {isFlipped && (
