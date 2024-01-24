@@ -23,22 +23,22 @@ const Nav = () => {
             } lg:flex lg:items-center lg:w-auto`}>
 
 
-          <Link to="/home" className=" whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980]  mx-2">
+          <Link to="/home" className=" whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db]  mx-2">
             Home
           </Link>
-          <Link to="/About" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980]  mx-2">
+          <Link to="/About" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db]  mx-2">
             About
           </Link>
-          <Link to="/DidYouKnowTV" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980]  mx-2">
+          <Link to="/DidYouKnowTV" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db]  mx-2">
             Did You Know TV
           </Link>
-          <Link to="/FunFacts" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980]  mx-2">
+          <Link to="/FunFacts" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
             Fun Facts
           </Link>
-          <Link to="/RighteousReading" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980]  mx-2">
+          <Link to="/RighteousReading" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
             Righteous Reading
           </Link>
-          <Link to="/WeeklyQuiz" className="whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f6d980] mx-2">
+          <Link to="/WeeklyQuiz" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
             Weekly Quiz
           </Link>
           
@@ -46,7 +46,7 @@ const Nav = () => {
       </div>
 
       <div className="flex-1 text-center">
-        <span className="font-semibold text-xl tracking-tight text-[#262626]">TBT Education App</span>
+        <span className="font-semibold font-sans text-xl tracking-tight text-[#262626]">TBT Education App</span>
       </div>
 
       <div className="flex flex-1 justify-end items-center">
