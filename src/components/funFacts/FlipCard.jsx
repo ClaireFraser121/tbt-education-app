@@ -5,7 +5,7 @@ import axios from 'axios';
 import './flipCard.css';
 import peopleData from './historicalPeopleData.json'
 
-const FlipCard = ({ props, person, imageFolderPath }) => {
+const FlipCard = ({ key, person }) => {
   console.log('Received person object:', person);
   const [isFlipped, setIsFlipped] = useState(false);
   const [fact, setFact] = useState(person.fact);
@@ -37,20 +37,20 @@ const FlipCard = ({ props, person, imageFolderPath }) => {
     }
   };
 
-  const imageUrl = `${imageFolderPath}/${person.imageFileName}`;
-  console.log(`Complete Image Path for ${person.name}: ${imageUrl}`);
-  console.log(`imageFolderPath: ${imageFolderPath}`);
-  console.log(`person.imageFileName: ${person.imageFileName}`);
+ // console.log(`person.imageFileName: ${JSON.stringify(person)}`);
+
 
   return (
     <motion.div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick} animate={controls}>
-      <motion.div className="card-face front" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <motion.div className="card-face front" >
         <div
           className="image-container"
           style={{
-            backgroundImage: `url(${imageFolderPath}/${person.imageFileName})`,
+            backgroundImage: `url(${person.imagePath})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            width: "100%",
+            height: "100%",
           }}
         />
         
@@ -58,7 +58,7 @@ const FlipCard = ({ props, person, imageFolderPath }) => {
       </motion.div>
       {isFlipped && (
         <motion.div className="card-face back">
-          <p style={{ color: 'black' }}>{fact}</p>
+          <p style={{ color: 'Black' }}>{fact}</p>
         </motion.div>
       )}
     </motion.div>
@@ -66,3 +66,4 @@ const FlipCard = ({ props, person, imageFolderPath }) => {
 };
 
 export default FlipCard;
+

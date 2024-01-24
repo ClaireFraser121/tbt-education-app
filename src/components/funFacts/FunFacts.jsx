@@ -5,13 +5,14 @@ import RandomFactCarousel from './RandomFactCarousel';
 import SearchBar from './SearchBar';
 import FlipDeck from './FlipDeck'; // Updated import
 import './funFacts.css';
-import './historicalPeopleData';
+// Importing historicalPeopleData from the correct file
+import historicalPeopleData from './historicalPeopleData';
 
 
 
 const FunFacts = () => {
   // Data for historical people
-  // const historicalPeople = [
+  // const historicalPeopleData = [
   //   { id: 1, name: 'Barack Obama', imageFileName: 'barack-obama-1129156_640.jpg' },
   //   { id: 2, name: 'Rube Foster', imageFileName: 'RubeFoster.png' },
   //   { id: 3, name: 'Bob Marley', imageFileName: 'BobMarley.png' },
@@ -29,17 +30,18 @@ const FunFacts = () => {
   //   // ... add more people
   // ];
 
-  return (
-    <Container>
-      <h1 className="mb-4">Fun Facts</h1>
-      <RandomFactCarousel />
-      <SearchBar />
-      <div className="flex flex-wrap">
-        {/* Assign a unique key to each FlipDeck */}
-        <FlipDeck key={1} />
-      </div>
-    </Container>
-  );
-};
-
-export default FunFacts;
+ 
+    return (
+      <Container>
+        <h1 className="mb-4">Fun Facts</h1>
+        <RandomFactCarousel />
+        <SearchBar />
+        <div className="flex flex-wrap">
+          {/* Passing historicalPeopleData as a prop to FlipDeck */}
+          <FlipDeck key={1} historicalPeopleData={historicalPeopleData} />
+        </div>
+      </Container>
+    );
+  };
+  
+  export default FunFacts;
