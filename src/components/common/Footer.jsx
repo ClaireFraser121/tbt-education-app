@@ -7,21 +7,23 @@ import githubIcon from "./../../images/github.png";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap items-center justify-between bg-[#262626] p-6">
-      <div className="flex flex-1 items-center">
-        <span className="font-semibold text-xl tracking-tight text-[#FFFFFF]">TBT Education App</span>
+    <footer className="bg-[#f6d980] p-2 border-solid border-[#262626]">
+      <div className="flex flex-col items-center mb-4">
+        <span className="font-semibold text-xl tracking-tight text-[#262626] mb-2">
+          TBT Education App
+        </span>
+
+        <div className="flex">
+          <Link to="/home" className="whitespace-nowrap text-[#262626] hover:text-[#f7f1db] mx-2">
+            Home
+          </Link>
+          <Link to="/About" className="whitespace-nowrap text-[#262626] hover:text-[#f7f1db] mx-2">
+            About
+          </Link>
+        </div>
       </div>
 
-      <div className="flex flex-1 justify-center">
-        <Link to="/home" className="whitespace-nowrap text-[#FFFFFF] hover:text-[#f7f1db] mx-2">
-          Home
-        </Link>
-        <Link to="/About" className="whitespace-nowrap text-[#FFFFFF] hover:text-[#f7f1db] mx-2">
-          About
-        </Link>
-      </div>
-
-      <div className="flex flex-1 justify-end items-center">
+      <div className="flex justify-center items-center mb-4">
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
           <img src={youtubeIcon} alt="YouTube" className="h-8 w-8 rounded-full mx-1" />
         </a>
@@ -32,8 +34,8 @@ const Footer = () => {
           <img src={githubIcon} alt="GitHub" className="h-8 w-8 rounded-full mx-1" />
         </a>
       </div>
-     
-       <p className='text-sm'>&copy; 2024 TBT Education App</p> 
+
+      <p className="text-sm text-center text-[#262626]">&copy; 2024 TBT Education App</p>
     </footer>
   );
 }

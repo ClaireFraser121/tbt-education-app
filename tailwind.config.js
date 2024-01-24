@@ -13,7 +13,8 @@ module.exports = {
         'Yellow': '#f6d980',
         'Green': '#6dcf98',
         'Red': '#e76d71',
-        'Neutral': '#f7f1db'
+        'Neutral': '#f7f1db',
+        'DNeutral': '#faeac8'
       },
       fontFamily: {},
       spacing: {
