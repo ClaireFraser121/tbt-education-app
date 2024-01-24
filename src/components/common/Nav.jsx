@@ -38,7 +38,7 @@ const Nav = () => {
           <Link to="/RighteousReading" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
             Righteous Reading
           </Link>
-          <Link to="/WeeklyQuiz" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
+          <Link to="/GetQuiz" className="whitespace-nowrap font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#f7f1db] mx-2">
             Weekly Quiz
           </Link>
           
