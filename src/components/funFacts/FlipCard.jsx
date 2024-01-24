@@ -64,6 +64,7 @@ const FlipCard = ({ key, person }) => {
       )}
     </motion.div>
   </div>
+  
 );
 };
 

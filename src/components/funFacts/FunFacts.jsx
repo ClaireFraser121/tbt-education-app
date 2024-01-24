@@ -7,6 +7,7 @@ import FlipDeck from './FlipDeck'; // Updated import
 import './funFacts.css';
 // Importing historicalPeopleData from the correct file
 import historicalPeopleData from './historicalPeopleData';
+import { Footer } from 'flowbite-react';
 
 
 
@@ -20,6 +21,7 @@ const FunFacts = () => {
           <FlipDeck key={1} historicalPeopleData={historicalPeopleData} />
         </div>
       </Container>
+      
     );
   };
   
