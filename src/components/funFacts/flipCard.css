@@ -75,7 +75,7 @@
 .back {
   transform: rotateY(180deg);
   backface-visibility: visible;
-  background-color: rgb(246, 244, 224);
+  background-color: rgb(244, 245, 250);
 
   padding: 20px;
   box-sizing: border-box;
