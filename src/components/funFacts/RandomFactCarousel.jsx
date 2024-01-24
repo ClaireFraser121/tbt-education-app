@@ -55,9 +55,9 @@ const RandomFactCarousel = () => {
 
   return (
     <div className="hero-section bg-cover bg-center h-3/4 md:h-2/3 lg:h-1/2 flex items-center justify-center relative text-white mb-8">
-    <div className="overlay absolute inset-0 bg-black opacity-75"></div>
-    <div className="text-center z-10 px-4 mt-8">
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 text-blue-500 text-gray-800 !text-gray-800-important">
+      <div className="overlay absolute inset-0 bg-black opacity-75"></div>
+      <div className="text-center z-10 px-6 md:px-16 mt-8">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 text-blue-500 text-gray-800 !text-gray-800-important">
         Fun Facts
       </h1>
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-yellow-400 animate__animated animate__fadeInUp">

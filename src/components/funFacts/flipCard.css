@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
+  width: 100%;
   padding-bottom: 108rem;
 }
 
@@ -16,9 +17,10 @@
   height: 400px;
   perspective: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjust the minmax values as needed */
   grid-template-rows: repeat(4, 1fr);
   gap: 20px;
+  justify-content: center; /* Center horizontally */
 }
 
 .card-container-item {
@@ -76,7 +78,7 @@
 .back {
   transform: rotateY(180deg);
   backface-visibility: visible;
-  background-color: rgb(246, 244, 224);
+  background-color: rgb(244, 245, 250);
 
   padding: 20px;
   box-sizing: border-box;
@@ -104,6 +106,13 @@
   height: 100vh;
 }
 
+.image-container {
+  object-fit: cover; /* or contain, based on your preference */
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* Adjust styles for smaller screens */
 @media (max-width: 1200px) {
@@ -115,23 +124,49 @@
   }
 }
 
-/* Adjust styles for medium-sized screens */
-@media (max-width: 900px) {
+/* Adjust styles for smaller screens */
+@media (max-width: 1200px) {
   .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /* Adjust the minmax values for medium-sized screens */
-    gap: 10px;
-    /* Adjust the gap as needed */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     width: 100%;
-    height: 100%;
   }
 }
 
+/* Adjust styles for medium-sized screens */
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    gap: 10px;
+    width: 100%;
+    height: 0%;
+    justify-content: center;
+    
+  }
+}
+
+/* Adjust styles for smaller screens */
 @media (max-width: 600px) {
   .card-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 0px; /* Adjust the gap as needed */
+    height: 63vh; /* Full viewport height */
+  }
+
+  .card {
+    width: calc(100% - 0%); /* Adjust the width and gap based on your preference */
+    max-width: 100%; /* Ensure the card doesn't exceed the viewport width */
+    max-height: max-content;
+  }
+
+  .image-container {
+    object-fit: cover; /* or contain, based on your preference */
     width: 100%;
     height: 100%;
   }
+  
 }
+
