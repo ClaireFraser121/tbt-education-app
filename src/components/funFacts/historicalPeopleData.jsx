@@ -1,13 +1,13 @@
 // historicalPeopleData.jsx
 
 const historicalPeopleData = [
-  { id: 1, name: 'Barack Obama', imageFileName: 'barack-obama-1129156_640.jpg' },
-  { id: 2, name: 'Rube Foster', imageFileName: 'RubeFoster.png' },
-  { id: 3, name: 'Bob Marley', imageFileName: 'BobMarley.png' },
-  { id: 4, name: 'Lauryn Hill', imageFileName: 'coolKid.png' },
-  { id: 5, name: 'Stevie Wonder', imageFileName: 'StevieWonder.png' },
-  { id: 6, name: 'Angela Davis', imageFileName: 'AngelaDavis.png' },
-  { id: 7, name: 'Claudette Colvin', imageFileName: 'ClaudetteColvin.png' },
+  { id: 1, name: 'Barack Obama', imageFileName: '../images/barack-obama-1129156_640.jpg' },
+  { id: 2, name: 'Rube Foster', imageFileName: '../images/RubeFoster.png' },
+  { id: 3, name: 'Bob Marley', imageFileName: '../images/BobMarley.png' },
+  { id: 4, name: 'Lauryn Hill', imageFileName: '../images/LaurynHill.png' },
+  { id: 5, name: 'Stevie Wonder', imageFileName: '../images/StevieWonder.png' },
+  { id: 6, name: 'Angela Davis', imageFileName: '../images/AngelaDavis.png' },
+  { id: 7, name: 'Claudette Colvin', imageFileName: '../images/ClaudetteColvin.png' },
   { id: 8, name: 'Bessie Coleman', imageFileName: 'BessieColeman.png' },
   { id: 9, name: 'Carter G. Woodson', imageFileName: 'CarterGWoodson.png' },
   { id: 10, name: 'Shirley Chisholm', imageFileName: 'ShirleyChisholm.png' },

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import axios from 'axios';
 import './flipCard.css';
-import peopleData from './historicalPeopleData.json'
 
 const FlipCard = ({ key, person }) => {
   console.log('Received person object:', person);
