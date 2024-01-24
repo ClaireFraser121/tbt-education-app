@@ -18,6 +18,7 @@ function GetQuiz() {
         }));
         setQuizQuestions(formattedData);
         setLoading(false);
+        console.log(quizQuestions)
       } catch (error) {
         console.error('Error fetching quiz questions:', error);
         setLoading(false);
