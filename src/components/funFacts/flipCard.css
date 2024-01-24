@@ -2,8 +2,9 @@
 .grid-container {
   display: flex;
   justify-content: center;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   height: 100vh;
+  width: 100%;
 }
 
 .card-container {
@@ -102,6 +103,13 @@
   height: 100vh;
 }
 
+.image-container {
+  object-fit: cover; /* or contain, based on your preference */
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* Adjust styles for smaller screens */
 @media (max-width: 1200px) {
@@ -127,16 +135,35 @@
   .card-container {
     grid-template-columns: repeat(auto-fill, minmax(1fr));
     gap: 10px;
-    width: 8%;
-    height: 80%;
+    width: 100%;
+    height: 0%;
     justify-content: center;
+    
   }
 }
 
+/* Adjust styles for smaller screens */
 @media (max-width: 600px) {
   .card-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 0px; /* Adjust the gap as needed */
+    height: 63vh; /* Full viewport height */
   }
+
+  .card {
+    width: calc(100% - 0%); /* Adjust the width and gap based on your preference */
+    max-width: 100%; /* Ensure the card doesn't exceed the viewport width */
+    max-height: max-content;
+  }
+
+  .image-container {
+    object-fit: cover; /* or contain, based on your preference */
+    width: 100%;
+    height: 100%;
+  }
+  
 }
+
