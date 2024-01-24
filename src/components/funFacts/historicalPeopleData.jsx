@@ -1,7 +1,7 @@
 // historicalPeopleData.jsx
 
 const historicalPeopleData = [
-  { id: 1, name: 'Barack Obama', imageFileName: './src/images/barack-obama-1129156_640.jpg' },
+  { id: 1, name: 'Barack Obama', imageFileName: './assets/barack-obama-1129156_640.jpg' },
   { id: 2, name: 'Rube Foster', imageFileName: './src/images/RubeFoster.png' },
   { id: 3, name: 'Bob Marley', imageFileName: './src/images/BobMarley.png' },
   { id: 4, name: 'Lauryn Hill', imageFileName: './src/images/LaurynHill.png' },
