@@ -169,7 +169,7 @@ const About = () => {
     <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-bold tracking-tight text-[#262626] sm:text-4xl sm:leading-none text-center">
         Meet Our Development Team...
     </h2>
-    <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
+    <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg justify-center">
   <div>
     <img
       className="object-cover w-24 h-24 rounded-full shadow"
@@ -177,8 +177,9 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-      <p className="text-lg font-bold">Claire Fraser</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer">Claire Fraser</a>
       <p className="mb-4 text-xs text-gray-800"> Trainee Front-end Web Developer</p>
+      
     </div>
   </div>
   <div>
@@ -188,8 +189,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-      <p className="text-lg font-bold">Simon Mckenzie</p>
-      <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon Mckenzie</a>
+    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
     </div>
   </div>
   <div>
@@ -199,8 +200,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-      <p className="text-lg font-bold">Jem Lawton</p>
-      <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
+    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
     </div>
   </div>
   <div>
@@ -210,8 +211,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-      <p className="text-lg font-bold">Annam Khalid</p>
-      <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
+    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
       
     </div>
   </div>
