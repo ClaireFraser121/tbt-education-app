@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import './flipCard.css';
 
-const FlipCard = ({ key, person }) => {
+const FlipCard = ({ person }) => {
   console.log('Received person object:', person);
   const [isFlipped, setIsFlipped] = useState(false);
   const [fact, setFact] = useState(person.fact);
