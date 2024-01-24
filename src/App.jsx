@@ -12,7 +12,6 @@ import RighteousReading from './components/righteousReading/RighteousReading';
 import Nav from './components/common/Nav';
 import './index.css';
 import './styles/tailwind.css';
-import './styles/SectionContainer.css';
 import './styles/Nav.css';
 import Footer from './components/common/Footer';
 
@@ -34,7 +33,6 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
-
           </div>
           <Footer />
         </SectionContainer>   
