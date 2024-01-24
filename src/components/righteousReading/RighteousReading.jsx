@@ -51,8 +51,6 @@ const RighteousReading = () => {
       <FeatureBookCard />
       <div className="sm:flex justify-between">
         <SmallBookCard />
-        <SmallBookCard />
-        <SmallBookCard />
       </div>
     </div>
   );
