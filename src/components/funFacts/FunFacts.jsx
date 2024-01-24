@@ -3,7 +3,6 @@ import React from 'react';
 import Container from '../common/SectionContainer';
 import RandomFactCarousel from './RandomFactCarousel';
 import FlipDeck from './FlipDeck'; // Updated import
-import './funFacts.css';
 // Importing historicalPeopleData from the correct file
 import historicalPeopleData from './historicalPeopleData';
 
