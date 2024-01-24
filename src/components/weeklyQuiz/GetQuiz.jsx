@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import API from '../../utils/API';
 import Quiz from './Quiz';
 
-function WeeklyQuiz() {
+function GetQuiz() {
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -38,4 +38,4 @@ function WeeklyQuiz() {
   );
 }
 
-export default WeeklyQuiz;
+export default GetQuiz;
