@@ -47,12 +47,18 @@ const FlipDeck = () => {
   return (
     <div className="grid-container">
       <div className="card-container">
-        {personFacts.map((person, index) => (
-          <FlipCard key={index} person={person} imageFolderPath="/assets/images" />
+        {historicalPeopleData.map((person) => (
+          <FlipCard 
+          id={person.id}
+          key={person.id}
+          person={person}
+          name={person.name}
+          image={person.image}
+          />
         ))}
       </div>
     </div>
+
   );
 };
-
 export default FlipDeck;

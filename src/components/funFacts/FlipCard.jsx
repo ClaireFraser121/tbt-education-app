@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import axios from 'axios';
-
 import './flipCard.css';
+import peopleData from './historicalPeopleData.json'
 
-const FlipCard = ({ person, imageFolderPath }) => {
+const FlipCard = ({ props, person, imageFolderPath }) => {
   console.log('Received person object:', person);
   const [isFlipped, setIsFlipped] = useState(false);
   const [fact, setFact] = useState(person.fact);
@@ -53,6 +53,7 @@ const FlipCard = ({ person, imageFolderPath }) => {
             backgroundPosition: 'center',
           }}
         />
+        
         <p>{person.name}</p>
       </motion.div>
       {isFlipped && (
