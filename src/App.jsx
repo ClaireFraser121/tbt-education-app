@@ -18,20 +18,20 @@ const App = () => {
   return (
     <Router >
       <GlobalLayout>
-          <Nav />
-          <div>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/funFacts" element={<FunFacts />} />
-              <Route path="/getQuiz" element={<GetQuiz />} />
-              <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
-              <Route path="/righteousReading" element={<RighteousReading />} />
-            </Routes>
-          </div>
-          <Footer />
-       
+        <Nav />
+        <div>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/funFacts" element={<FunFacts />} />
+            <Route path="/getQuiz" element={<GetQuiz />} />
+            <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
+            <Route path="/righteousReading" element={<RighteousReading />} />
+          </Routes>
+        </div>
+        <Footer />
+
       </GlobalLayout>
     </Router>
   );
