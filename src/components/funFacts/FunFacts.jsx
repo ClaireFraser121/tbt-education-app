@@ -8,8 +8,6 @@ import './funFacts.css';
 // Importing historicalPeopleData from the correct file
 import historicalPeopleData from './historicalPeopleData';
 
-
-
 const FunFacts = () => {
   return (
     <Container>
