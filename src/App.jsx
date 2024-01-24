@@ -20,9 +20,7 @@ const App = () => {
       <GlobalLayout>
           <Nav />
           <div>
-
             <Routes>
-
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
@@ -31,7 +29,6 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
-
           </div>
           <Footer />
        

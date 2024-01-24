@@ -131,6 +131,15 @@
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
   }
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 135rem;
+  }
 }
 
 /* Adjust styles for medium-sized screens */
@@ -140,12 +149,19 @@
     gap: 10px;
     width: 100%;
     height: 0%;
-    justify-content: center;
-    
+    justify-content: center; 
   }
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 135rem;
+  }
+  
 }
 
-/* Adjust styles for smaller screens */
 @media (max-width: 600px) {
   .card-container {
     display: flex;
@@ -153,7 +169,18 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     gap: 0px; /* Adjust the gap as needed */
-    height: 63vh; /* Full viewport height */
+    height: 420px; /* Full viewport height */
+  }
+/* Adjust styles for smaller screens */
+
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 108rem;
   }
 
   .card {
