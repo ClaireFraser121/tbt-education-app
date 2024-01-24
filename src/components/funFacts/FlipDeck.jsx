@@ -21,7 +21,7 @@ const FlipDeck = () => {
 
           const facts = response.data.Results;
           const selectedFact = facts[Math.floor(Math.random() * facts.length)];
-          return { name: name, imagePath:"src/images/"+imageFileName, fact: selectedFact.text, tags: selectedFact.tags };
+          return { name: name, imagePath:process.env.PUBLIC_URL + "/images/"+imageFileName, fact: selectedFact.text, tags: selectedFact.tags };
         } catch (error) {
           console.error(`Error fetching person facts for ${name}`, error);
           return { name: name, fact: 'Error fetching data', tags: [] };
