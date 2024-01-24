@@ -4,7 +4,7 @@ const historicalPeopleData = [
   { id: 1, name: 'Barack Obama', imageFileName: 'barack-obama-1129156_640.jpg' },
   { id: 2, name: 'Rube Foster', imageFileName: 'RubeFoster.png' },
   { id: 3, name: 'Bob Marley', imageFileName: 'BobMarley.png' },
-  { id: 4, name: 'Lauryn Hill', imageFileName: 'coolKid.png' },
+  { id: 4, name: 'Lauryn Hill', imageFileName: 'LaurynHill.png' },
   { id: 5, name: 'Stevie Wonder', imageFileName: 'StevieWonder.png' },
   { id: 6, name: 'Angela Davis', imageFileName: 'AngelaDavis.png' },
   { id: 7, name: 'Claudette Colvin', imageFileName: 'ClaudetteColvin.png' },

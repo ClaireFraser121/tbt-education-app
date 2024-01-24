@@ -49,6 +49,7 @@ const FlipCard = ({ key, person }) => {
             backgroundImage: `url(${person.imagePath})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            backgroundColor: 'whitesmoke',
             width: "100%",
             height: "100%",
           }}
