@@ -13,7 +13,6 @@ import historicalPeopleData from './historicalPeopleData';
 const FunFacts = () => { 
     return (
       <Container>
-        {/* <h1 className="mb-4">Fun Facts</h1> */}
         <RandomFactCarousel />
         <SearchBar />
         <div className="flex flex-wrap">
