@@ -23,6 +23,7 @@ const App = () => {
         <SectionContainer className="m-0 p-0">
           <Nav />
           <div>
+
             <Routes>
               <Route path="/container" element={<SectionContainer />} />
               <Route path="/" element={<Home />} />
@@ -33,6 +34,7 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
+
           </div>
           <Footer />
         </SectionContainer>   
