@@ -9,15 +9,15 @@ const Footer = () => {
   return (
     <footer className="bg-[#f6d980] p-2 border-solid border-[#262626]">
       <div className="flex flex-col items-center mb-4">
-        <span className="font-semibold text-xl tracking-tight text-[#262626] mb-2">
+        <span className="font-semibold font-sans text-xl tracking-tight text-[#262626] mb-2">
           TBT Education App
         </span>
 
         <div className="flex">
-          <Link to="/home" className="whitespace-nowrap text-[#262626] hover:text-[#f7f1db] mx-2">
+          <Link to="/home" className="whitespace-nowrap font-sans text-[#262626] hover:text-[#f7f1db] mx-2">
             Home
           </Link>
-          <Link to="/About" className="whitespace-nowrap text-[#262626] hover:text-[#f7f1db] mx-2">
+          <Link to="/About" className="whitespace-nowrap font-sans text-[#262626] hover:text-[#f7f1db] mx-2">
             About
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="text-sm text-center text-[#262626]">&copy; 2024 TBT Education App</p>
+      <p className="text-sm text-center font-sans text-[#262626]">&copy; 2024 TBT Education App</p>
     </footer>
   );
 }
