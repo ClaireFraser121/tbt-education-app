@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FlipCard from './FlipCard';
 import historicalPeopleData from './historicalPeopleData';
+import './flipCard.css';
  // Updated import
 
 const FlipDeck = () => {
@@ -46,7 +47,9 @@ const FlipDeck = () => {
   }
 
   return (
-    <div className="grid-container">
+
+    
+    <div className="grid-container mx-auto">
       <div className="card-container">
         {personFacts.map((person, index) => (
           <FlipCard key={index} person={person} />

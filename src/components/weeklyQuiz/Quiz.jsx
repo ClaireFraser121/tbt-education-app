@@ -8,6 +8,7 @@ const Quiz = ({ quizQuestions }) => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showStartScreen, setShowStartScreen] = useState(true);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const startQuiz = () => {
     setShowStartScreen(false);
@@ -18,6 +19,8 @@ const Quiz = ({ quizQuestions }) => {
   const getQuestion = (index) => {
     if (index < quizQuestions.length) {
       setQuestionIndex(index);
+      setFeedback('');
+      setSelectedAnswer(null);
     } else {
       endQuiz();
     }
@@ -27,17 +30,23 @@ const Quiz = ({ quizQuestions }) => {
     setQuizCompleted(true);
   };
 
-  const handleAnswerClick = (selectedAnswer) => {
+  const handleAnswerClick = (index) => {
     const currentQuestion = quizQuestions[questionIndex];
 
-    if (currentQuestion.answers[selectedAnswer] === currentQuestion.correctAnswer) {
-      setFeedback('Correct!');
-    } else {
-      setFeedback('Wrong!');
+    if (selectedAnswer === null) {
+      if (currentQuestion.answers[index] === currentQuestion.correctAnswer) {
+        setFeedback('Correct!');
+      } else {
+        setFeedback('Wrong!');
+      }
     }
 
-    setQuestionIndex((prevIndex) => prevIndex + 1);
-    getQuestion(questionIndex + 1);
+    setSelectedAnswer(index);
+
+    setTimeout(() => {
+      setQuestionIndex((prevIndex) => prevIndex + 1);
+      getQuestion(questionIndex + 1);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -77,26 +86,28 @@ const Quiz = ({ quizQuestions }) => {
           <div className="mb-4 mx-auto max-w-md">
             {quizQuestions[questionIndex] && (
               <>
-                <h3 className="text-2xl font-bold mb-2">{quizQuestions[questionIndex].question}</h3>
+                <h3 className="text-2xl font-bold mb-7">{quizQuestions[questionIndex].question}</h3>
                 <form>
                   {quizQuestions[questionIndex].answers.map((answer, index) => (
-                    <div key={index} className="mb-2">
+                    <div key={index} className="mb-5">
                       <input
-                        className="mr-2"
+                        className="radioCustomButton"
                         type="radio"
                         id={`answer-${index}`}
                         name="answer"
                         onChange={() => handleAnswerClick(index)}
+                        checked={selectedAnswer === index}
+                        disabled={selectedAnswer !== null}
                       />
-                      <label htmlFor={`answer-${index}`}>{answer}</label>
+                      <label className="radioCustomLabel" htmlFor={`answer-${index}`}>{answer}</label>
                     </div>
                   ))}
                 </form>
               </>
             )}
           </div>
-          <p className="mx-auto max-w-md">Feedback:</p>
-          <p className="mb-20 mx-auto max-w-md">{feedback}</p>
+          <p className="mx-auto max-w-md mt-8">Feedback:</p>
+          <p className="mb-10 mx-auto max-w-md">{feedback}</p>
         </>
       )}
     </div>
@@ -104,3 +115,4 @@ const Quiz = ({ quizQuestions }) => {
 };
 
 export default Quiz;
+
