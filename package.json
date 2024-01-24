@@ -13,14 +13,17 @@
     "watch:css": "tailwindcss build -i src/styles/tailwind.css -o dist/output.css --watch"
   },
   "dependencies": {
+    "@types/react-transition-group": "^1.1.11",
     "axios": "^1.6.5",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.18.0",
     "papaparse": "^5.4.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^3.0.1",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
