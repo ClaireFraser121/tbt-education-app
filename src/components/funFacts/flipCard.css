@@ -5,7 +5,10 @@
   align-items: flex-start;
   height: 100vh;
   width: 100%;
+  padding-bottom: 108rem;
 }
+
+
 
 .card-container {
   width: 100%;
