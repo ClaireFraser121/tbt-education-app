@@ -1,23 +1,26 @@
 /* sectionContainer.css */
-.section-container {
+/* .section-container {
   max-width: 1200px;
   margin: 0 auto;
  
 }
+
 
 /* Add the following style for the page main title */
 /* .section-container .section-title {
   font-size: 3rem;
   color: #333;
   margin-bottom: 20px;
-}
 
-.section-container-with-nav {
+
+/* .section-container-with-nav {
   max-width: 1200px;
   margin: 0 auto;
+
   padding: 20px;
 } */
 
 .section-container-with-nav > nav {
   padding: 0;
 }
+
