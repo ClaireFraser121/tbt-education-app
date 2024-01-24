@@ -46,7 +46,7 @@ const DidYouKnowTV = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}>
-                <h1 className='text-3xl font-bold mb-4 text-[#FFFFFF]'>Did You Know TV</h1>
+                <h1 className='text-5xl font-bold mb-4 text-[#eeebde]'>Did You Know TV</h1>
             </div>
 
             <div className="video-container flex flex-col items-center justify-center my-8 ">
@@ -60,7 +60,7 @@ const DidYouKnowTV = () => {
                 ></iframe>
                 <p className="text-xl mt-12 mb-8">Discover more content on our founders YouTube channel.</p>
                 <a href="https://www.youtube.com/@2Badda"
-                className="mt-5 bg-[#e76d71] text-[#FFFFFF] font-bold py-2 px-4 rounded hover:bg-gray-100"
+                className="mt-5 bg-[#262626] text-[#FFFFFF] font-bold py-2 px-4 rounded hover:bg-[#e76d71]"
                 target="_blank" rel="noopener noreferrer">2 Badda's Youtube Page
                 </a>
             </div>
