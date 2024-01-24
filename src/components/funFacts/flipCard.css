@@ -2,7 +2,7 @@
 .grid-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   height: 100vh;
 }
 
@@ -13,9 +13,10 @@
   height: 400px;
   perspective: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjust the minmax values as needed */
   grid-template-rows: repeat(4, 1fr);
   gap: 20px;
+  justify-content: center; /* Center horizontally */
 }
 
 .card-container-item {
@@ -112,15 +113,23 @@
   }
 }
 
+/* Adjust styles for smaller screens */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+  }
+}
+
 /* Adjust styles for medium-sized screens */
 @media (max-width: 900px) {
   .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /* Adjust the minmax values for medium-sized screens */
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
     gap: 10px;
-    /* Adjust the gap as needed */
-    width: 100%;
-    height: 100%;
+    width: 8%;
+    height: 80%;
+    justify-content: center;
   }
 }
 
@@ -129,6 +138,5 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     width: 100%;
-    height: 100%;
   }
 }
