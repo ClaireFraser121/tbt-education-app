@@ -39,17 +39,19 @@ const FlipCard = ({ key, person }) => {
  // console.log(`person.imageFileName: ${JSON.stringify(person)}`);
 
 
-  return (
+ return (
+  <div className="card-container-item">
     <motion.div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick} animate={controls}>
-      <motion.div className="card-face front" >
+      <motion.div className="card-face front">
         <div
           className="image-container"
           style={{
             backgroundImage: `url(${person.imagePath})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            width: "100%",
-            height: "100%",
+            backgroundColor: 'whitesmoke',
+            width: '100%',
+            height: '100%',
           }}
         />
         
@@ -61,7 +63,8 @@ const FlipCard = ({ key, person }) => {
         </motion.div>
       )}
     </motion.div>
-  );
+  </div>
+);
 };
 
 export default FlipCard;
