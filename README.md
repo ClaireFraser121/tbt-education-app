@@ -37,7 +37,7 @@ The TBT Education App provides a seamless user experience with the following mai
 
 ### Home Page
 
-![Home Page](assets/images/home-page.png)
+![Home Page]<img width="1424" alt="home-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/26f713af-1bc9-4520-8fb6-937420141b39">
 
 The home page introduces TBT education, guiding students and parents to learning resources and fun tools.
 
