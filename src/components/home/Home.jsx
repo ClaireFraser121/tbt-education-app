@@ -24,34 +24,43 @@ const Home = () => {
             </svg>
           </div>
           <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-            <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                Welcome To
-              </p>
-            </div>
-            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-              Unlocking Potential, Empowering Young Minds
-            </h5>
-            <p className="mb-5 text-gray-800">
-              <span className="font-bold">At TBT Education</span>, our platform is designed to empower your child with a diverse array of engaging activities, fostering not just knowledge but also self-esteem. Discover the transformative power of focused learning, where each activity is a step towards unlocking their full potential. <br /><br />
-              <p>
-                <span className="font-bold">Education that Inspires. Empowerment that Lasts.🚀</span>
-              </p>
-            </p>
-            <div className="flex items-center">
-              <Link
-                to="/about" // Specify the path to the "About" page
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn More
-                <svg
-                  className="inline-block w-3 ml-2"
-                  fill="currentColor"
-                  viewBox="0 0 12 12"
-                >
-                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                </svg>
-              </Link>
+  <div>
+    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+      Welcome To
+    </p>
+  </div>
+  <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+  Unlocking Potential, Empowering Young Minds
+</h5>
+<p className="mb-5 text-gray-800">
+  <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 7-14. Dive into our platform and enjoy:
+  <br /><br />
+  - <b>Fun Facts:</b> Black History interactive cards for an enlightening experience
+  <br />
+  - Engage in <b>weekly quizzes</b> for an interactive challenge
+  <br />
+  - Discover fascinating facts on our YouTube <b>'Did You Know'</b> video page
+  <br />
+  - Embark on a literary journey by exploring our dedicated book page, aptly named <b>'Righteous Reading.'</b> Discover a world of knowledge and inspiration at your fingertips!
+  <br /><br />
+  Discover the transformative power of focused learning, where each activity is a step towards unlocking their full potential.
+  <br /><br />
+  <span className="font-bold">Education that Inspires. Empowerment that Lasts. 🚀</span>
+</p>
+<div className="flex items-center">
+  <Link
+      to="/about" // Specify the path to the "About" page
+      className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+    >
+      Learn More
+      <svg
+        className="inline-block w-3 ml-2"
+        fill="currentColor"
+        viewBox="0 0 12 12"
+      >
+        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+      </svg>
+    </Link>
             </div>
           </div>
         </div>
