@@ -35,3 +35,13 @@
     background-size: 27px;
     border-color: #8bc53f;
   }
+
+  @media (max-width: 769px) {
+    .restart-quiz-btn {
+      margin-top: 30px; 
+      margin-bottom: 50px;
+    }
+    .hero-section {
+    padding-bottom: 0px;
+    }
+  }

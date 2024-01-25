@@ -25,11 +25,12 @@ function GetQuiz() {
       }
     };
 
+  
+
     fetchData();
   }, []);
-
-  return (
-    <div>
+    return (
+      <div>
       {loading ? (
         <p className="mx-auto max-w-md mt-4">Loading questions...</p>
       ) : (

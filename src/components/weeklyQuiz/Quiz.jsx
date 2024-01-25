@@ -11,10 +11,19 @@ const Quiz = ({ quizQuestions }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const startQuiz = () => {
-    setShowStartScreen(false);
+    // Show start screen
     setLoading(true);
-    // Other initialization logic here
+    setShowStartScreen(false);
   };
+
+  const reloadQuiz = () => {
+    setQuestionIndex(0);
+    setFeedback('');
+    setQuizCompleted(false);
+    setLoading(true);
+    setSelectedAnswer(null);
+    setShowStartScreen(true);
+  }
 
   const getQuestion = (index) => {
     if (index < quizQuestions.length) {
@@ -63,13 +72,14 @@ const Quiz = ({ quizQuestions }) => {
   return (
     <div>
       {showStartScreen && (
-        <div className="start-screen bg-gray-800 text-white p-8 mx-auto w-full">
-          <h2 className="mt-5 mb-5 text-3xl font-bold mb-4 text-center">Weekly Quiz</h2>
-          <p className="text-center mb-10">
+        <div className="start-screen bg-gradient-to-r from-green-900 via-green-700 to-green-500 text-white p-8 mx-auto w-full">
+          <h2 className="mt-12 mb-7 text-3xl font-bold mb-4 text-center">Weekly Quiz</h2>
+          <p className="text-center mb-10 mt-8">
             Test your knowledge by trying to answer the following questions. You'll be able to see your score at the end!
           </p>
           <button
-            className="bg-blue-500 mb-8 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto block"
+
+            className="bg-yellow-400 mb-20 hover:bg-green-400 text-white font-bold py-2 px-4 rounded mx-auto block"
             onClick={startQuiz}
           >
             Start Quiz
@@ -79,10 +89,15 @@ const Quiz = ({ quizQuestions }) => {
 
       {!showStartScreen && (
         <>
-          {/* Render your quiz UI here */}
-          <div className="hero-section bg-gray-800 text-white p-8 mb-8 text-center">
-            <h2 className="text-3xl font-bold mb-4 mx-auto max-w-md">Weekly Quiz</h2>
-          </div>
+<div className="hero-section bg-gradient-to-r from-green-800 via-green-600 to-green-400 text-white p-8 pb-10 mb-8 flex flex-col md:flex-row items-center">
+  <h2 className="text-3xl font-bold mx-auto">Weekly Quiz</h2>
+  <button
+    className="restart-quiz-btn bg-yellow-400 mb-20 md:mb-0 hover:bg-green-400 text-white font-bold py-2 px-4 rounded"
+    onClick={reloadQuiz}
+  >
+    Restart Quiz
+  </button>
+</div>
           <div className="mb-4 mx-auto max-w-md">
             {quizQuestions[questionIndex] && (
               <>
@@ -115,4 +130,3 @@ const Quiz = ({ quizQuestions }) => {
 };
 
 export default Quiz;
-
