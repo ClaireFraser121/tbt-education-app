@@ -38,37 +38,31 @@ The TBT Education App provides a seamless user experience with the following mai
 ### Home Page
 
 <img width="1424" alt="home-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/26f713af-1bc9-4520-8fb6-937420141b39">
-
 The home page introduces TBT education, guiding students and parents to learning resources and fun tools.
 
 ### Fun Facts Page
 
 <img width="1452" alt="fun-facts-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0126156b-e1ae-44ca-9eca-00c0a42ff896">
-
 Learn interesting facts about Black History with dynamic content loaded from the Black History Facts API.
 
 ### TBT Quiz Page
 
 <img width="1452" alt="quiz-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/52878d2b-f548-4341-81fe-9e5dd99efdae">
-
 Reinforce in-class learning with a weekly quiz, featuring a user-friendly interface for quiz results.
 
 ### Did You Know TV Video Page
 
 <img width="1452" alt="video-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0a905639-3412-4e85-b7b3-b1d88b06cc41">
-
 Stay updated with the latest YouTube videos related to Black History through dynamic embedding.
 
 ### Righteous Reading Page
 
 <img width="1438" alt="reading-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/ed3611e3-55f8-4a69-8a48-0b6eebc93c25">
-
 Discover recommended Amazon books related to Black History with the integration of the Amazon Product Advertising API.
 
 ### About Us Page
 
 <img width="1438" alt="about-us-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/dc256722-a394-436e-8cec-c7a83bda930a">
-
 Get to know the app's purpose, the importance of Black History education, and meet the development team.
 
 ## Live Site
