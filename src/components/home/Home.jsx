@@ -1,7 +1,8 @@
 import React from 'react';
-import Footer from '../common/Footer';
+import { Link } from 'react-router-dom';
+
 import './Home.css';
-import Nav from '../common/Nav';
+
 
 const Home = () => {
   return (
@@ -34,14 +35,12 @@ const Home = () => {
             <p className="mb-5 text-gray-800">
               <span className="font-bold">At TBT Education</span>, our platform is designed to empower your child with a diverse array of engaging activities, fostering not just knowledge but also self-esteem. Discover the transformative power of focused learning, where each activity is a step towards unlocking their full potential. <br /><br />
               <p>
-              <span className="font-bold">Education that Inspires. Empowerment that Lasts.🚀</span>
+                <span className="font-bold">Education that Inspires. Empowerment that Lasts.🚀</span>
               </p>
             </p>
             <div className="flex items-center">
-
-              <a
-                href="/"
-                aria-label=""
+              <Link
+                to="/about" // Specify the path to the "About" page
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn More
@@ -52,7 +51,7 @@ const Home = () => {
                 >
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
