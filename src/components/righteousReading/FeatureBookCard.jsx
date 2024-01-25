@@ -19,7 +19,7 @@ const FeatureBookCard = () => {
       <div className="w-full md:w-1/2 flex justify-center">
         <img
           className="object-cover object-center w-full max-w-xs shadow-md transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-4 ring-red-400"
-          src="src/components/righteousReading/assets/images/BlackandYellowGeniusAutobiographyBookCover.png"
+          src="/images/BlackandYellowGeniusAutobiographyBookCover.png"
           alt="Featured Book"
         />
       </div>
