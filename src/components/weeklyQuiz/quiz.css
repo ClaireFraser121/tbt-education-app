@@ -1,10 +1,11 @@
-  .radioCustomButton {
+/* CSS styles for custom radio buttons   */
+.radioCustomButton {
     position: absolute;
     width: auto;
     opacity: 0;
-  }
-  
-  .radioCustomLabel {
+}
+
+.radioCustomLabel {
     position: relative;
     width: 100%;
     margin: 0;
@@ -12,9 +13,9 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-  }
-  
-  .radioCustomButton ~ .radioCustomLabel:before {
+}
+
+.radioCustomButton~.radioCustomLabel:before {
     position: absolute;
     top: 20px;
     left: 38px;
@@ -27,21 +28,23 @@
     border: 1px solid #bbb;
     border-radius: 50%;
     transition: all 0.3s;
-  }
-  
-  .radioCustomButton:checked ~ .radioCustomLabel:before {
+}
+
+.radioCustomButton:checked~.radioCustomLabel:before {
     content: '';
     background: #8bc53f url(./svg/icon-check.svg) no-repeat;
     background-size: 27px;
     border-color: #8bc53f;
-  }
+}
 
-  @media (max-width: 769px) {
-    .restart-quiz-btn {
-      margin-top: 30px; 
-      margin-bottom: 50px;
+/* Responsive styles for smaller screens */
+@media (max-width: 769px) {
+    .restartQuizBtn {
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
-    .hero-section {
-    padding-bottom: 0px;
+
+    .heroSection {
+        padding-bottom: 0px;
     }
-  }
+}
