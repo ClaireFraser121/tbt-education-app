@@ -24,13 +24,13 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-center items-center mb-4">
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@2baddaDidYouKnow" target="_blank" rel="noopener noreferrer">
           <img src={youtubeIcon} alt="YouTube" className="h-8 w-8 rounded-full mx-1" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/2badda" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" className="h-8 w-8 rounded-full mx-1" />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ClaireFraser121/tbt-education-app" target="_blank" rel="noopener noreferrer">
           <img src={githubIcon} alt="GitHub" className="h-8 w-8 rounded-full mx-1" />
         </a>
       </div>
