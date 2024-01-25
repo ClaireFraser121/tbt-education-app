@@ -104,19 +104,38 @@ Visit the live site [here](https://tbt-education-app.netlify.app/).
 ### Third-Party Assets
 
 - [Black History Facts API](https://blackhistoryapi.io)
-- [Amazon Product Advertising API](API guide link)
-- [YouTube API](YouTube API link)
-- [Google Developer API - Google Sheets](Google Sheets API link)
+- [Google Sheets API](https://developers.google.com/sheets)
+- [YouTube API](https://developers.google.com/youtube/v3)
+- [Google Books](https://developers.google.com/books)
 
 ### Libraries, Packages, and Technologies
 
 - Axios
 - Tailwind
 - Netlify (Frontend deployment)
-- MERN Stack: MongoDB, Express, React, Nodejs
-- AWS EC2 (Backend server deployment): NGINX + PM2
-- Ubuntu Server
+- MongoDB 
+- Express (Config in process)
+- React 
+- Nodejs 
+- AWS EC2 (Backend server deployment): 
+- NGINX
+- PM2
+- Papaparse
+- Ubuntu Server 
 - Framer Motion
+
+### Research References
+
+- [React - Developer Learning Website](https://react.dev/learn/react-developer-tools)
+- [Tailwind - Documentation](https://v2.tailwindcss.com/docshttps://v2.tailwindcss.com/docs)
+- [Kitwind - Components](https://kitwind.io/products/kometa/components)
+- [Atlassian - Git Workflows Guide ](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+- [IBM - Create SSL With OpenSSL](https://www.ibm.com/docs/en/api-connect/2018.x?topic=overview-generating-self-signed-certificate-using-openssl)
+- [Medium - Using Google Sheets As A CMS](https://medium.com/@alyssax/how-to-use-google-sheets-as-a-cms-or-a-database-f9d8e736fdce)
+- [Flaticon - Custom Icons](https://www.flaticon.com/)
+- [Dev.to - Setup and Deploy A MERN Stack](https://dev.to/abdulwaqar844/how-to-build-and-deploy-a-mernreactexpressmongodbnodejs-stack-application-on-aws-ec2-3e93)
+- [npm Docs - CLI Commands](https://docs.npmjs.com/cli/v10/commands)
+- [Amazon EC2 - User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
 ## License
 
