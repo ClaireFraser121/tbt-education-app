@@ -1,6 +1,5 @@
 // Home.jsx
 import React from 'react';
-import Header from '../common/Header';
 import Footer from '../common/Footer';
 import './Home.css';
 import Nav from '../common/Nav';
@@ -8,7 +7,6 @@ import Nav from '../common/Nav';
 const Home = () => {
   return (
     <div>
-      <Header />
       <main>
         {/* Your Home page content goes here.
          Header Section:

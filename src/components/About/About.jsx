@@ -14,25 +14,19 @@ const About = () => {
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
           <div className="max-w-xl mb-6">
             <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              <p className="inline-block  px-3 py-px mb-4 text-xs font-sans font-semibold tracking-wider text-[#292929] uppercase rounded-full bg-teal-accent-400">
                 About Us
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 Welcome to the TBT Education App!  text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 Welcome to the TBT Education App! font-sans text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Welcome to the TBT Education App! 
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, take weekly quizzes, and discover recommended books on Amazon..
+            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, take weekly quizzes, and discover recommended books on Amazon.
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            >
-              Learn more
-            </a>
+          
           </div>
         </div>
       </div>
@@ -51,17 +45,17 @@ const About = () => {
           <a
             href="/"
             aria-label="Article"
-            className="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-black transition-colors duration-200 hover:text-deep-purple-accent-700 sm:text-4xl"
+            className="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-black transition-colors duration-200 sm:text-4xl"
           >
             The Founder of The Badda Trust
           </a>
         </div>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base font-sans  text-gray-700 md:text-lg">
         Born and raised in south London, award winning recording artist 2 Badda developed his craft as an M.C. His motivation derives from his life in London, his Jamaican roots, and the controversial issues that occur in his surrounding society. 
         </p>
       </div>
       <div className="mb-10 sm:text-center">
-        <a href="/" aria-label="Author" className="inline-block mb-1">
+        <a  className="inline-block mb-1">
           <img
             alt="founder with students"
             src={image3}
@@ -69,9 +63,8 @@ const About = () => {
           />
         </a>
         <div>
-        <p className="text-base text-gray-700 md:text-lg">
-        The Badda Trust is a prominent organisation in the community, providing alternative and necessary education  with  a  focus  on
-        empowering  young people. The organisation specializes in he facilitation of FREE Saturday School Classes for all children aged 8 - 13 years old. Over the last two and a half years, The Badda Trust has successfully impacted the lives of dozens of young people in South London and in turn we have helped reduce violence in the area.
+        <p className="text-base font-sans  text-gray-700 md:text-lg">
+        The Badda Trust is a prominent organisation in the community, providing alternative and necessary education with a focus on empowering  young people. The organisation specializes in the facilitation of FREE Saturday School Classes for all children aged 8 - 13 years old. Over the last two and a half years, The Badda Trust has successfully impacted the lives of dozens of young people in South London and in turn we have helped reduce violence in the area.
         </p>
         
         </div>
@@ -91,10 +84,10 @@ const About = () => {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-extrabold tracking-tight text-white sm:text-4xl sm:leading-none">
                 Want to get in touch?
               </h2>
-              <p className='text-3xl text-[#f7f1db]'> Submit your name and email, we will reach out shortly!</p>
+              <p className='text-3xl font-sans font-bold text-[#f7f1db]'> Submit your name and email, we will reach out shortly!</p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="bg-[#f7f1db] rounded shadow-2xl p-7 sm:p-10">
@@ -166,7 +159,7 @@ const About = () => {
    
 
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-bold tracking-tight text-[#262626] sm:text-4xl sm:leading-none text-center">
+    <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-extrabold tracking-tight text-[#262626] sm:text-4xl sm:leading-none text-center">
         Meet Our Development Team...
     </h2>
     <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg justify-center">
@@ -177,8 +170,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer">Claire Fraser</a>
-      <p className="mb-4 text-xs text-gray-800"> Trainee Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer ">Claire Fraser</a>
+      <p className="mb-4 text-xs font-sans font-bold text-gray-800"> Trainee Front-end Web Developer</p>
       
     </div>
   </div>
@@ -189,8 +182,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon Mckenzie</a>
-    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon Mckenzie</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
     </div>
   </div>
   <div>
@@ -200,8 +193,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
-    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
     </div>
   </div>
   <div>
@@ -211,8 +204,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col justify-center mt-2">
-    <a className='hover:text-[#e76d71] text-lg font-bold' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
-    <p className="mb-4 text-xs text-gray-800">Trainee Front-end Web Developer</p>
+    <a className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
       
     </div>
   </div>

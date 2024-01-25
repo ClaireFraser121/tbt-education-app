@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalLayout from './components/common/GlobalLayout';
 import Home from './components/home/Home';
 import About from './components/About/About';
-import Contact from './components/contact/Contact';
 import FunFacts from './components/funFacts/FunFacts';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
@@ -23,7 +22,6 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/funFacts" element={<FunFacts />} />
               <Route path="/getQuiz" element={<GetQuiz />} />
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
