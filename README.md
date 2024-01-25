@@ -19,7 +19,12 @@ Throughout the development of this project, the team gained valuable experience 
 - [Usage](#usage)
 - [Live Site](#live-site)
 - [Credits](#credits)
+- [Team](#team)
+- [Third-Party Assets](#third-party-assets)
+- [Libraries, Packages, and Technologies](#libraries-packages-and-technologies)
 - [License](#license)
+- [Badges](#badges)
+- [Conclusion](#conclusion)
 
 ## Installation
 
@@ -37,37 +42,49 @@ The TBT Education App provides a seamless user experience with the following mai
 
 ### Home Page
 
-<img width="1424" alt="home-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/26f713af-1bc9-4520-8fb6-937420141b39">
+
+![Home Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/26f713af-1bc9-4520-8fb6-937420141b39)
+
 
 The home page introduces TBT education, guiding students and parents to learning resources and fun tools.
 
 ### Fun Facts Page
 
-<img width="1452" alt="fun-facts-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0126156b-e1ae-44ca-9eca-00c0a42ff896">
+
+![Fun Facts Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0126156b-e1ae-44ca-9eca-00c0a42ff896)
+
 
 Learn interesting facts about Black History with dynamic content loaded from the Black History Facts API.
 
 ### TBT Quiz Page
 
-<img width="1452" alt="quiz-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/52878d2b-f548-4341-81fe-9e5dd99efdae">
+
+![Quiz Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/52878d2b-f548-4341-81fe-9e5dd99efdae)
+
 
 Reinforce in-class learning with a weekly quiz, featuring a user-friendly interface for quiz results.
 
 ### Did You Know TV Video Page
 
-<img width="1452" alt="video-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0a905639-3412-4e85-b7b3-b1d88b06cc41">
+
+![Video Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0a905639-3412-4e85-b7b3-b1d88b06cc41)
+
 
 Stay updated with the latest YouTube videos related to Black History through dynamic embedding.
 
 ### Righteous Reading Page
 
-<img width="1438" alt="reading-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/ed3611e3-55f8-4a69-8a48-0b6eebc93c25">
+
+![Reading Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/ed3611e3-55f8-4a69-8a48-0b6eebc93c25)
+
 
 Discover recommended Amazon books related to Black History with the integration of the Amazon Product Advertising API.
 
 ### About Us Page
 
-<img width="1438" alt="about-us-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/dc256722-a394-436e-8cec-c7a83bda930a">
+
+![About Us Page](https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/dc256722-a394-436e-8cec-c7a83bda930a)
+
 
 Get to know the app's purpose, the importance of Black History education, and meet the development team.
 
@@ -80,7 +97,7 @@ Visit the live site [here](https://tbt-education-app.netlify.app/).
 ### Team
 
 - [Simon Mckenzie](https://github.com/simonmckenzie)
-- [Claire Fraser](https://github.com/clairefraser)
+- [Claire Fraser](https://github.com/ClaireFraser121)
 - [Annam Khalid](https://github.com/annamkhalid)
 - [Jem Lawton](https://github.com/jemlawton)
 
@@ -106,5 +123,21 @@ Visit the live site [here](https://tbt-education-app.netlify.app/).
 This project is licensed under the [MIT License](LICENSE).
 
 ---
+
+## Badges
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbac9fc7-647c-4536-a436-883f32a0a40a/deploy-status)](https://app.netlify.com/sites/tbt-education-app/deploys)
+
+
+![License](https://img.shields.io/badge/license-MIT-green)
+
+![Last Commit](https://img.shields.io/github/last-commit/ClaireFraser121/tbt-education-app)
+
+![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow)
+
+![React](https://img.shields.io/badge/library-React-blue)
+
+
+## Conclusion
 
 🏆 The TBT Education App aspires to bring an immersive and educational journey to young learners, contributing to the promotion of Black History education in an engaging and empowering manner.
