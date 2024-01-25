@@ -11,8 +11,8 @@ const Home = () => {
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
             <img
-              src="public/images/HomePageImage.png"
-              alt=""
+              src="images/HomePageImage.png"
+              alt="Image of children learning"
               className="object-cover w-full lg:absolute h-80 lg:h-full"
             />
             <svg
@@ -35,13 +35,13 @@ const Home = () => {
 <p className="mb-5 text-gray-800">
   <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 7-14. Dive into our platform and enjoy:
   <br /><br />
-  - <b>Fun Facts:</b> Black History interactive cards for an enlightening experience
+  <b>Fun Facts -</b> Black History interactive cards for an enlightening experience
   <br />
-  - Engage in <b>weekly quizzes</b> for an interactive challenge
+  <b>Weekly quizzes -</b> for an interactive challenge to test your knowledge
   <br />
-  - Discover fascinating facts on our YouTube <b>'Did You Know'</b> video page
+  <b>Did You Know -</b> Discover fascinating facts on our YouTube video page
   <br />
-  - Embark on a literary journey by exploring our dedicated book page, aptly named <b>'Righteous Reading.'</b> Discover a world of knowledge and inspiration at your fingertips!
+  <b>Righteous Reading -</b> Embark on a literary journey by exploring our dedicated book page. Knowledge and inspiration at your fingertips!
   <br /><br />
   Discover the transformative power of focused learning, where each activity is a step towards unlocking their full potential.
   <br /><br />
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gray-900">
+      <div className="bg-gray-950">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
           <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
             <svg
@@ -111,26 +111,30 @@ const Home = () => {
             </svg>
           </div>
           <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="px-10 py-20 text-center transition duration-300 transform bg-gray-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <Link to="/DidYouKnowTV" className="px-10 py-20 text-center transition duration-300 transform bg-red-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+              <img src="images/did_you_know_icons.png" alt="Did You Know Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Did You Know TV Icon
+                Watch
               </p>
-            </div>
-            <div className="px-10 py-20 text-center transition duration-300 transform bg-gray-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            </Link>
+            <Link to="/FunFacts" className="px-10 py-20 text-center transition duration-300 transform bg-green-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src="images/fun_facts_icons.png" alt="Fun Facts Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Fun Facts Icon
+                Discover
               </p>
-            </div>
-            <div className="px-10 py-20 text-center transition duration-300 transform bg-gray-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            </Link>
+            <Link to="/RighteousReading" className="px-10 py-20 text-center transition duration-300 transform bg-yellow-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src="images/righteous_reading_icon.png" alt="Righteous Reading Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Righteous Reading Icon
+                Learn
               </p>
-            </div>
-            <div className="px-10 py-20 text-center transition duration-300 transform bg-gray-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            </Link>
+            <Link to="/GetQuiz" className="px-10 py-20 text-center transition duration-300 transform bg-blue-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src="images/weekly_quiz_icon.png" alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Weekly Quiz Icon
+                Fun
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
