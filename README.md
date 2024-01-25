@@ -43,43 +43,37 @@ The home page introduces TBT education, guiding students and parents to learning
 
 ### Fun Facts Page
 
-![Fun Facts Page](assets/images/fun-facts-page.png)
+<img width="1452" alt="fun-facts-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0126156b-e1ae-44ca-9eca-00c0a42ff896">
 
 Learn interesting facts about Black History with dynamic content loaded from the Black History Facts API.
 
 ### TBT Quiz Page
 
-![Quiz Page](assets/images/quiz-page.png)
+<img width="1452" alt="quiz-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/52878d2b-f548-4341-81fe-9e5dd99efdae">
 
 Reinforce in-class learning with a weekly quiz, featuring a user-friendly interface for quiz results.
 
 ### Did You Know TV Video Page
 
-![Video Page](assets/images/video-page.png)
+<img width="1452" alt="video-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/0a905639-3412-4e85-b7b3-b1d88b06cc41">
 
 Stay updated with the latest YouTube videos related to Black History through dynamic embedding.
 
 ### Righteous Reading Page
 
-![Reading Page](assets/images/reading-page.png)
+<img width="1438" alt="reading-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/ed3611e3-55f8-4a69-8a48-0b6eebc93c25">
 
 Discover recommended Amazon books related to Black History with the integration of the Amazon Product Advertising API.
 
 ### About Us Page
 
-![About Us Page](assets/images/about-us-page.png)
+<img width="1438" alt="about-us-page" src="https://github.com/ClaireFraser121/tbt-education-app/assets/145933508/dc256722-a394-436e-8cec-c7a83bda930a">
 
 Get to know the app's purpose, the importance of Black History education, and meet the development team.
 
-### Contact Page
-
-![Contact Page](assets/images/contact-page.png)
-
-Facilitate user contact, enhance engagement through social media, and gather feedback.
-
 ## Live Site
 
-Visit the live site [here](https://your-live-site-url.com).
+Visit the live site [here](https://tbt-education-app.netlify.app/).
 
 ## Credits
 
