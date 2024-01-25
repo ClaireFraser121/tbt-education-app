@@ -18,7 +18,6 @@ const App = () => {
     <Router >
       <GlobalLayout>
           <Nav />
-          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -28,7 +27,6 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
-          </div>
           <Footer />
        
       </GlobalLayout>
