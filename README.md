@@ -123,6 +123,7 @@ Visit the live site [here](https://tbt-education-app.netlify.app/).
 - Papaparse
 - Ubuntu Server 
 - Framer Motion
+- Kitwind (UI Tailwind Kits)
 
 ### Research References
 
