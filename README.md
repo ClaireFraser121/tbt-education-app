@@ -22,7 +22,6 @@ Throughout the development of this project, the team gained valuable experience 
 - [Team](#team)
 - [Third-Party Assets](#third-party-assets)
 - [Libraries, Packages, and Technologies](#libraries-packages-and-technologies)
-- [License](#license)
 - [Badges](#badges)
 - [Conclusion](#conclusion)
 
@@ -33,7 +32,7 @@ To run the TBT Education App locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Run `npm install` to install project dependencies.
-4. Run `npm start` to start the development server.
+4. Run `npm run dev` to start the development server.
 5. Open your browser and visit `http://localhost:3000` to view the app.
 
 ## Usage
@@ -138,22 +137,17 @@ Visit the live site [here](https://tbt-education-app.netlify.app/).
 - [npm Docs - CLI Commands](https://docs.npmjs.com/cli/v10/commands)
 - [Amazon EC2 - User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Badges
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cbac9fc7-647c-4536-a436-883f32a0a40a/deploy-status)](https://app.netlify.com/sites/tbt-education-app/deploys)
 
-
-![License](https://img.shields.io/badge/license-MIT-green)
-
 ![Last Commit](https://img.shields.io/github/last-commit/ClaireFraser121/tbt-education-app)
 
 ![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow)
+
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json-purple)
+
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml-green)
 
 ![React](https://img.shields.io/badge/library-React-blue)
 
