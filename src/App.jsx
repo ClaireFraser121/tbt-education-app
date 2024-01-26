@@ -1,36 +1,37 @@
 // App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GlobalLayout from './components/common/GlobalLayout';
 import Home from './components/home/Home';
 import About from './components/About/About';
-import Contact from './components/contact/Contact';
 import FunFacts from './components/funFacts/FunFacts';
-import WeeklyQuiz from './components/weeklyQuiz/WeeklyQuiz';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
 import Nav from './components/common/Nav';
+import './index.css';
+import './styles/tailwind.css';
+import './styles/Nav.css';
+import Footer from './components/common/Footer';
+import GetQuiz from './components/weeklyQuiz/GetQuiz';
 
 const App = () => {
   return (
-    <Router>
-      <div> 
-        <Nav />
-        <div><h1 className="text-3xl font-bold underline">
-      Hello world! </h1></div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/funFacts" element={<FunFacts />} />
-          <Route path="/weeklyQuiz" element={<WeeklyQuiz />} />
-          <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
-          <Route path="/righteousReading" element={<RighteousReading />} />
-        </Routes>
-      </div> 
-      
-     
+    <Router >
+      <GlobalLayout>
+          <Nav />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/funFacts" element={<FunFacts />} />
+              <Route path="/getQuiz" element={<GetQuiz />} />
+              <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
+              <Route path="/righteousReading" element={<RighteousReading />} />
+            </Routes>
+          <Footer />
+       
+      </GlobalLayout>
     </Router>
   );
 }
-
 
 export default App;

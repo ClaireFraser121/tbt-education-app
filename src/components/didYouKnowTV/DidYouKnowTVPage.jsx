@@ -3,8 +3,9 @@ import DidYouKnowTV from './DidYouKnowTV';
 
 const DidYouKnowTVPage = () => {
     return (
-      <div>
-        <h2>Did You Know TV</h2>
+      <div className='flex flex-col items-center justify-center my-8'>
+        
+        
         <DidYouKnowTV/>
       </div>
     );
