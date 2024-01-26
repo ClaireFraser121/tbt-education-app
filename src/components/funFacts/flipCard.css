@@ -1,16 +1,15 @@
 /* flipCards.css */
 
-/* Main grid container styles */
+/* Common styles for grid and card */
 .grid-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
   width: 100%;
-  padding-bottom: 108rem; /* Adjust the padding as needed */
+  padding-bottom: 108rem;
 }
 
-/* Card container styles */
 .card-container {
   width: 100%;
   max-width: 1200px;
@@ -18,19 +17,17 @@
   height: 400px;
   perspective: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjust the minmax values as needed */
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   grid-template-rows: repeat(4, 1fr);
   gap: 20px;
   justify-content: center; /* Center horizontally */
 }
 
-/* Individual card item styles */
 .card-container-item {
   width: 100%;
   height: 100%;
 }
 
-/* Card styles */
 .card {
   width: 265px;
   height: 400px;
@@ -41,7 +38,6 @@
   cursor: pointer;
 }
 
-/* Styles for both faces of the card */
 .card-face {
   position: absolute;
   width: 100%;
@@ -57,7 +53,7 @@
   background-color: white;
 }
 
-/* Front face of the card */
+/* Front and back face styling */
 .front {
   transform: rotateY(0deg);
   backface-visibility: hidden;
@@ -70,9 +66,7 @@
   border: 5px solid rgba(214, 223, 223, 0.996);
 }
 
-/* Styles for both faces of the card */
-.front,
-.back {
+.front, .back {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +75,6 @@
   text-align: center;
 }
 
-/* Back face of the card */
 .back {
   transform: rotateY(180deg);
   backface-visibility: visible;
@@ -91,7 +84,7 @@
   border: 5px solid rgba(220, 233, 233, 0.604);
 }
 
-/* Additional styles for content on the back face */
+/* Additional styling for back face paragraph */
 .back p {
   color: rgb(227, 109, 109);
   font-size: 14px;
@@ -100,14 +93,12 @@
   text-overflow: ellipsis;
 }
 
-/* Flipped state of the card */
 .flipped {
   transform: rotateY(180deg);
   backface-visibility: visible;
-  /* background-color: black; */
 }
 
-/* Container styles */
+/* Container styling */
 .container {
   display: flex;
   justify-content: center;
@@ -115,73 +106,57 @@
   height: 100vh;
 }
 
-/* Image container styles */
 .image-container {
   object-fit: cover; /* or contain, based on your preference */
   width: 100%;
   height: auto;
 }
 
-
-
-/* Responsive styles for larger screens */
+/* Media Queries */
 @media (max-width: 1200px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    width: 100%;
-    height: 100%;
   }
 
   .grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    width: 100%;
     padding-bottom: 135rem;
   }
 }
 
-/* Adjust styles for medium-sized screens */
 @media (max-width: 900px) {
   .card-container {
     grid-template-columns: repeat(auto-fill, minmax(1fr));
     gap: 10px;
-    width: 100%;
-    height: 0%;
     justify-content: center; 
   }
+
   .grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    width: 100%;
     padding-bottom: 135rem;
   }
-  
 }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 600px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    gap: 0px; /* Adjust the gap as needed */
-    height: 420px; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    height: 420px;
+  }
+
+  .grid-container {
+    padding-bottom: 108rem;
   }
 
   .card {
-    width: calc(100% - 0%); /* Adjust the width and gap based on your preference */
-    max-width: 100%; /* Ensure the card doesn't exceed the viewport width */
+    width: 100%;
+    max-width: 100%;
     max-height: max-content;
   }
 
   .image-container {
-    object-fit: cover; /* or contain, based on your preference */
     width: 100%;
     height: 100%;
   }
