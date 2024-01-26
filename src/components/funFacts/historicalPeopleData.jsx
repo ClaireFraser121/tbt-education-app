@@ -17,9 +17,6 @@ const historicalPeopleData = [
   { id: 14, name: 'Nelson Rolihlahla Mandela', imageFileName: 'NelsonMandela.png' },
 ];
 
+
 export default historicalPeopleData;
 
-// Add console.log statements to log image paths
-historicalPeopleData.forEach(person => {
-  console.log(`Image path for ${person.name}: ${person.imageFileName}`);
-});

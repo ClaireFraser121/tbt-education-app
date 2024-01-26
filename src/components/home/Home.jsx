@@ -7,14 +7,17 @@ import './Home.css';
 const Home = () => {
   return (
     <>
+     {/* Hero Section */}
       <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
+            {/* Image Section */}
             <img
               src="images/HomePageImage.png"
               alt="Image of children learning"
               className="object-cover w-full lg:absolute h-80 lg:h-full"
             />
+            {/* Background Shape */}
             <svg
               className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
               viewBox="0 0 20 104"
@@ -24,11 +27,13 @@ const Home = () => {
             </svg>
           </div>
           <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
+  {/* Welcome Banner */}
   <div>
     <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
       Welcome To
     </p>
   </div>
+   {/* Main Content */}
   <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
   Unlocking Potential, Empowering Young Minds
 </h5>
@@ -47,6 +52,7 @@ const Home = () => {
   <br /><br />
   <span className="font-bold">Education that Inspires. Empowerment that Lasts. 🚀</span>
 </p>
+{/* Learn More Button */}
 <div className="flex items-center">
   <Link
       to="/about" // Specify the path to the "About" page
@@ -65,14 +71,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/* Featured Sections */}
       <div className="bg-gray-950">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+          {/* Featured Content */}
           <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
             <svg
               viewBox="0 0 88 88"
               className="w-full max-w-screen-xl text-gray-800"
             >
+              {/* Circles for Background */}
               <circle
                 fill="currentColor"
                 fillOpacity="0.4"
@@ -110,6 +118,7 @@ const Home = () => {
               />
             </svg>
           </div>
+          {/* Featured Links Did You Know */}
           <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <Link to="/DidYouKnowTV" className="px-10 py-20 text-center transition duration-300 transform bg-red-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
               <img src="images/did_you_know_icons.png" alt="Did You Know Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
@@ -117,18 +126,21 @@ const Home = () => {
                 Watch
               </p>
             </Link>
+            {/* Featured Link Fun Facts */}
             <Link to="/FunFacts" className="px-10 py-20 text-center transition duration-300 transform bg-green-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
             <img src="images/fun_facts_icons.png" alt="Fun Facts Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Discover
               </p>
             </Link>
+            {/* Featured Link Righteous Reading */}
             <Link to="/RighteousReading" className="px-10 py-20 text-center transition duration-300 transform bg-yellow-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
             <img src="images/righteous_reading_icon.png" alt="Righteous Reading Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Learn
               </p>
             </Link>
+            {/* Featured Link Weekly Quiz */}
             <Link to="/GetQuiz" className="px-10 py-20 text-center transition duration-300 transform bg-blue-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
             <img src="images/weekly_quiz_icon.png" alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
