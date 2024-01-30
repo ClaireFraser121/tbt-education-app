@@ -38,7 +38,7 @@ const Home = () => {
   Unlocking Potential, Empowering Young Minds
 </h5>
 <p className="mb-5 text-gray-800">
-  <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 7-14. Dive into our platform and enjoy:
+  <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 8-13. Dive into our platform and enjoy:
   <br /><br />
   <b>Fun Facts -</b> Black History interactive cards for an enlightening experience
   <br />
