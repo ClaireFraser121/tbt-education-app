@@ -174,7 +174,7 @@ const About = () => {
     />
     <div className="flex flex-col items-center mt-2">
     <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer ">Claire Fraser</a>
-      <p className="mb-4 text-xs font-sans font-bold text-gray-800"> Front-end Web Developer</p>
+      <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
       
     </div>
   </div>
@@ -197,7 +197,7 @@ const About = () => {
     />
     <div className="flex flex-col items-center mt-2">
     <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
     </div>
   </div>
   <div>
@@ -208,7 +208,7 @@ const About = () => {
     />
     <div className="flex flex-col items-center mt-2">
     <a className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
       
     </div>
   </div>
