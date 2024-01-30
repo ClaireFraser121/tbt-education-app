@@ -3,7 +3,10 @@ import './About.css';
 import image1 from './../../images/ed-3.png';
 import image2 from './../../images/ed-6.png';
 import image3 from './../../images/screenshot2.png';
-import icon from './../../images/icon.png';
+import icon1 from './../../images/team_pic_claire.png';
+import icon2 from './../../images/team_pic_simon.png';
+import icon3 from './../../images/team_pic_jem.png';
+import icon4 from './../../images/team_pic_annam.png';
 
 
 const About = () => {
@@ -165,45 +168,45 @@ const About = () => {
     <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg justify-center">
   <div>
     <img
-      className="object-cover w-24 h-24 rounded-full shadow"
-      src={icon}
+      className="object-cover w-24 h-24 rounded-full shadow mx-auto my-auto"
+      src={icon1}
       alt="Person"
     />
-    <div className="flex flex-col justify-center mt-2">
+    <div className="flex flex-col items-center mt-2">
     <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer ">Claire Fraser</a>
-      <p className="mb-4 text-xs font-sans font-bold text-gray-800"> Trainee Front-end Web Developer</p>
+      <p className="mb-4 text-xs font-sans font-bold text-gray-800"> Front-end Web Developer</p>
       
     </div>
   </div>
   <div>
     <img
-      className="object-cover w-24 h-24 rounded-full shadow"
-      src={icon}
+      className="object-cover w-24 h-24 rounded-full shadow mx-auto my-auto"
+      src={icon2}
       alt="Person"
     />
-    <div className="flex flex-col justify-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon Mckenzie</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
+    <div className="flex flex-col items-center mt-2">
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon McKenzie</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
     </div>
   </div>
   <div>
     <img
-      className="object-cover w-24 h-24 rounded-full shadow"
-      src={icon}
+      className="object-cover w-24 h-24 rounded-full shadow mx-auto my-auto"
+      src={icon3}
       alt="Person"
     />
-    <div className="flex flex-col justify-center mt-2">
+    <div className="flex flex-col items-center mt-2">
     <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
     <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
     </div>
   </div>
   <div>
     <img
-      className="object-cover w-24 h-24 rounded-full shadow"
-      src={icon}
+      className="object-cover w-24 h-24 rounded-full shadow mx-auto my-auto"
+      src={icon4}
       alt="Person"
     />
-    <div className="flex flex-col justify-center mt-2">
+    <div className="flex flex-col items-center mt-2">
     <a className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
     <p className="mb-4 text-xs font-sans font-bold text-gray-800">Trainee Front-end Web Developer</p>
       
