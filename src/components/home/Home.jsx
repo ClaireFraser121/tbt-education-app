@@ -7,37 +7,60 @@ import './Home.css';
 const Home = () => {
   return (
     <>
-     {/* Hero Section */}
-      <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-        <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
-          <div className="relative lg:w-1/2">
-            {/* Image Section */}
-            <img
-              src="images/HomePageImage.png"
-              alt="Image of children learning"
-              className="object-cover w-full lg:absolute h-80 lg:h-full"
-            />
-            {/* Background Shape */}
-            <svg
-              className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
-              viewBox="0 0 20 104"
-              fill="currentColor"
-            >
-              <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
-            </svg>
-          </div>
-          <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-  {/* Welcome Banner */}
-  <div>
-    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-      Welcome To
-    </p>
+     {/* Hero Video Section */}
+<header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+<div className="relative z-30 text-green-500 font-Lato text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-extrabold rounded-xl animate-text text-center opacity-100 shadow-lg">
+  <div className="text-animation" style={{animationDelay: '1s', animationDuration: '3s'}}>
+      <p>
+      The Badda Trust Saturday School
+      </p>
+    </div>
+    <div className="text-animation" style={{animationDelay: '4s', animationDuration: '3s'}}>
+      8 - 13 Years Old
+    </div>
+    <div className="text-animation" style={{animationDelay: '7s', animationDuration: '3s'}}>
+      Martial Arts
+    </div>
+    <div className="text-animation" style={{animationDelay: '12s', animationDuration: '3s'}}>
+      Maroon Studies
+    </div>
+    <div className="text-animation" style={{animationDelay: '22s', animationDuration: '6s'}}>
+      Music Production
+    </div>
+    <div className="text-animation" style={{animationDelay: '41s', animationDuration: '6s'}}>
+      Law Studies
+    </div>
+    <div className="text-animation" style={{animationDelay: '48s', animationDuration: '3s'}}>
+      For More Information
+    </div>
+    <div className="text-animation" style={{animationDelay: '51s', animationDuration: '2s'}}>
+      Email
+    </div>
+    <div className="text-animation" style={{animationDelay: '53s', animationDuration: '4s'}}>
+      thebaddatrust@gmail.com
+    </div>
   </div>
+  <video autoPlay loop muted className="absolute z-10 w-full h-full object-cover">
+    <source src="src/videos/VID-20240201-WA0002.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</header>
    {/* Main Content */}
-  <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-  Unlocking Potential, Empowering Young Minds
-</h5>
-<p className="mb-5 text-gray-800">
+  <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="p-8 rounded  sm:p-16">
+        <div className="flex flex-col lg:flex-row">
+          <div className="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+            <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Unlocking Potential, 
+              <br className="hidden md:block" />
+              Empowering {' '}
+              <span className="inline-block text-deep-purple-accent-400">
+              Young Minds
+              </span>
+            </h1>
+          </div>
+          <div className="lg:w-1/2">
+          <p className="mb-5 text-gray-800 text-1xl">
   <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 7-14. Dive into our platform and enjoy:
   <br /><br />
   <b>Fun Facts -</b> Black History interactive cards for an enlightening experience
@@ -51,26 +74,18 @@ const Home = () => {
   Discover the transformative power of focused learning, where each activity is a step towards unlocking their full potential.
   <br /><br />
   <span className="font-bold">Education that Inspires. Empowerment that Lasts. 🚀</span>
-</p>
-{/* Learn More Button */}
-<div className="flex items-center">
-  <Link
-      to="/about" // Specify the path to the "About" page
-      className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-    >
-      Learn More
-      <svg
-        className="inline-block w-3 ml-2"
-        fill="currentColor"
-        viewBox="0 0 12 12"
-      >
-        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-      </svg>
-    </Link>
-            </div>
+</p> 
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
         </div>
       </div>
+    </div>
       {/* Featured Sections */}
       <div className="bg-gray-950">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
