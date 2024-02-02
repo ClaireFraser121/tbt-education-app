@@ -1,0 +1,21 @@
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+     0% {
+      opacity: 2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-text {
+    animation: fadeInOut 56s linear forwards;
+  }
+  
+  .text-animation {
+    opacity: 0;
+    animation: fadeInOut 3s linear forwards;
+  }
+  
