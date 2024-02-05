@@ -65,7 +65,7 @@ const Home = () => {
       {/* Hero Video Section */}
       <header className="relative h-screen overflow-hidden">
         <video controls autoPlay loop muted className="absolute inset-0 w-full h-full object-cover z-0">
-          <source src="public/videos/VID-20240201-WA0002.mp4" type="video/mp4" />
+          <source src="videos/VID-20240201-WA0002.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <Typewriter />
