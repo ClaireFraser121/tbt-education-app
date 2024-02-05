@@ -87,8 +87,8 @@ const Home = () => {
             </div>
             
             <div className="lg:w-1/2">
-              <p className="mb-5 text-gray-800 text-1xl">
-                <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 7-14. Dive into our platform and enjoy:
+              <p className="mb-5 text-gray-800 text-lg">
+                <span className="font-bold">At TBT Education</span>, we breathe life into learning with captivating activities designed for children aged 8-13. Dive into our platform and enjoy:
                 <br /><br />
                 <b>Fun Facts -</b> Black History interactive cards for an enlightening experience
                 <br />
@@ -103,7 +103,7 @@ const Home = () => {
                 <span className="font-bold">Education that Inspires. Empowerment that Lasts. 🚀</span>
               </p>
               <Link to="/About"
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-2xl"
               >
                 <p>
                 Learn more

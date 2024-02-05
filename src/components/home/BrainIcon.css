@@ -1,10 +1,10 @@
 .brain-icon {
-    width: 300px; /* Adjust the size as needed */
-    height: 300px;
+    width: 500px; /* Adjust the size as needed */
+    height: 500px;
     background: url('images/lightbulb_icon.png') center/cover; /* Replace with the path to your brain icon image */
     transition: transform 0.3s, filter 0.3s;
     margin-bottom: 20px; /* Adjust margin-bottom as needed for larger screens */
-    margin-top: 40px;
+    margin-top: 80px;
 }
   
   .brain-icon:hover {
