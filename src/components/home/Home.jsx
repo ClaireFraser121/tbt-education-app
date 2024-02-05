@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import BrainIcon from './BrainIcon';
 import './Home.css';
 
 const Typewriter = () => {
@@ -73,8 +73,8 @@ const Home = () => {
       {/* Main Content */}
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="p-8 rounded  sm:p-16">
-          <div className="flex flex-col lg:flex-row">
-            <div className="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+          <div className="flex flex-col lg:flex-row ">
+          <div className="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5 relative">
               <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 Unlocking Potential,
                 <br className="hidden md:block" />
@@ -82,6 +82,7 @@ const Home = () => {
                 <span className="inline-block text-deep-purple-accent-400">
                   Young Minds
                 </span>
+                <BrainIcon style={{ width: '400px', height: '400px', position: 'absolute', bottom: 0, left: 0 }} />
               </h1>
             </div>
             
@@ -101,13 +102,13 @@ const Home = () => {
                 <br /><br />
                 <span className="font-bold">Education that Inspires. Empowerment that Lasts. 🚀</span>
               </p>
-              <a
-                href="/"
-                aria-label=""
+              <Link to="/About"
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
+                <p>
                 Learn more
-              </a>
+                </p>
+              </Link>
             </div>
           </div>
         </div>
