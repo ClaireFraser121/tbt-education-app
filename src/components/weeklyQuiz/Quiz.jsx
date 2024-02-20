@@ -121,7 +121,7 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
                                 <h3 className="text-2xl font-bold mb-7">{quizQuestions[questionIndex].question}</h3>
                                 <form>
                                     {quizQuestions[questionIndex].answers.map((answer, index) => (
-                                        <div key={index} className="mb-5">
+                                        <div key={index} className="mb-6">
                                             <input
                                                 className="radioCustomButton"
                                                 type="radio"
@@ -139,7 +139,7 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
                         )}
                     </div>
                     {/* Display feedback */}
-                    <p className="mx-auto max-w-md mt-8">Feedback:</p>
+                    <p className="mx-auto max-w-md mt-8 mb-2">Feedback:</p>
                     <p className="mb-10 mx-auto max-w-md">{feedback}</p>
                 </>
             )}
