@@ -1,4 +1,3 @@
-// App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalLayout from './components/common/GlobalLayout';
 import Home from './components/home/Home';
@@ -17,7 +16,9 @@ const App = () => {
   return (
     <Router >
       <GlobalLayout>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
           <Nav />
+          <div style={{ flex: 1 }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
@@ -27,8 +28,9 @@ const App = () => {
               <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
               <Route path="/righteousReading" element={<RighteousReading />} />
             </Routes>
+          </div>
           <Footer />
-       
+        </div>
       </GlobalLayout>
     </Router>
   );
