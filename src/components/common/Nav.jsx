@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#f6d980] p-2">
-      <div className="flex flex-1 items-center justify-start">
+      <div className="flex flex-auto items-center justify-start">
         <div className="block lg:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
@@ -45,11 +45,11 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="flex-1 text-center">
-        <span className=" font-sans text-3xl font-extrabold tracking-tight text-[#262626]">TBT Education App</span>
+      <div className="flex-auto text-center">
+        <span className="nav-text font-sans text-3xl font-extrabold tracking-tight text-[#262626]">TBT Education App</span>
       </div>
 
-      <div className="flex flex-1 justify-end items-center">
+      <div className="flex flex-auto justify-end items-center">
         <img className='h-16' src={logo} alt="tbt logo" />
       </div>
     </nav>
