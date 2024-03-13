@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BrainIcon from './BrainIcon';
 import './Home.css';
 
 const Typewriter = () => {
@@ -14,7 +13,7 @@ const Typewriter = () => {
       "Law Studies",
       "For More Information",
       "Email:",
-      "thebaddatrust@gmail.com."
+      "thebaddatrust@gmail.com"
     ];
     const pauseDurations = [100, 50, 50, 3000, 8000, 2000, 500, 500, 250]; // Specify pause durations in milliseconds
     let i = 0;
@@ -82,7 +81,6 @@ const Home = () => {
                 <span className="inline-block text-deep-purple-accent-400">
                   Young Minds
                 </span>
-                <BrainIcon style={{ width: '400px', height: '400px', position: 'absolute', bottom: 0, left: 0 }} />
               </h1>
             </div>
             
