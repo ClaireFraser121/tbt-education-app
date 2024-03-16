@@ -13,16 +13,21 @@ function GetQuiz() {
       // Fetch quiz questions from API
       const data = await API.getQuizQuestions();
       // Format the data to match the expected structure
-      const formattedData = data.map((item) => ({
-        questionId: item.QuestionID,
-        question: item.Question,
-        answers: [item.OptionA, item.OptionB, item.OptionC],
-        correctAnswer: item.Correct,
-      }));
+      const formattedData = data.map((item) => {
+        // Shuffle the answers array
+        const shuffledAnswers = [item.OptionA, item.OptionB, item.OptionC].sort(() => Math.random() - 0.5);
+        return {
+          questionId: item.QuestionID,
+          question: item.Question,
+          answers: shuffledAnswers,
+          correctAnswer: item.Correct,
+        };
+      });
 
       // Shuffle the questions and answers
       const shuffledData = formattedData.sort(() => Math.random() - 0.5);
       setQuizQuestions(shuffledData);
+      console.log(shuffledData)
       setLoading(false);
     } catch (error) {
       console.error('Error fetching quiz questions:', error);
