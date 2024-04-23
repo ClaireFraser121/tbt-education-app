@@ -7,12 +7,12 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-[#f6d980] p-2">
+    <nav className={`flex items-center justify-between flex-wrap bg-[#f6d980] p-2 ${isOpen ? 'pb-7' : ''}`}>
       <div className="flex flex-1 items-center justify-start">
         <div className="block lg:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 border rounded text-[#262626] border-[#262626] hover:text-[#f7f1db] hover:border-[#f7f1db]"
+            className="flex items-center px-3 py-2 mr-2 border rounded text-[#262626] border-[#262626] hover:text-[#f7f1db] hover:border-[#f7f1db]"
           >
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0zM10 9h10v2H10zM0 15h20v2H0z"/></svg>
           </button>
@@ -45,12 +45,12 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="flex-1 text-center">
-        <span className=" font-sans text-3xl font-extrabold tracking-tight text-[#262626]">TBT Education App</span>
+      <div className={`flex-1 lg:flex-auto text-center ${isOpen ? 'hidden' : 'block'}`}>
+        <span className="nav-text font-sans text-3xl font-extrabold tracking-tight text-[#262626]">TBT Education App</span>
       </div>
 
-      <div className="flex flex-1 justify-end items-center">
-        <img className='h-16' src={logo} alt="tbt logo" />
+      <div className="flex flex-1 justify-end items-start">
+      <img className={`h-16 ${isOpen ? 'h-20' : ''}`} src={logo} alt="tbt logo" />
       </div>
     </nav>
   );
