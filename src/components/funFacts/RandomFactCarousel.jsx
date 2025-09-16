@@ -1,64 +1,98 @@
 // RandomFactCarousel.jsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import '../funFacts/randomFactCarousel.css';
+import historicalPeopleData from './historicalPeopleData';
+
+const FALLBACK_FACTS = historicalPeopleData.map(
+  ({ name, fallbackFact = 'Fun fact coming soon!', fallbackTags = [], fallbackSource = '' }) => ({
+    text: fallbackFact,
+    people: [name],
+    tags: fallbackTags,
+    source: fallbackSource,
+  })
+);
 
 const RandomFactCarousel = () => {
-  // State to store fetched facts and the current fact index
-  const [facts, setFacts] = useState([]);
-  const [currentFactIndex, setCurrentFactIndex] = useState(0);
-  
-  // Ref to track component mount
+  const [facts, setFacts] = useState(FALLBACK_FACTS);
+  const [currentFactIndex, setCurrentFactIndex] = useState(() =>
+    Math.floor(Math.random() * FALLBACK_FACTS.length)
+  );
+  const [isUsingFallback, setIsUsingFallback] = useState(true);
   const isMounted = useRef(false);
 
-  // Function to fetch random facts from the API
-  const getRandomFacts = async () => {
+  const setFallbackFacts = useCallback(() => {
+    const randomIndex = Math.floor(Math.random() * FALLBACK_FACTS.length);
+    setFacts(FALLBACK_FACTS);
+    setCurrentFactIndex(randomIndex);
+    setIsUsingFallback(true);
+  }, []);
+
+  const getRandomFacts = useCallback(async () => {
     try {
-      // Fetch random facts from the API
       const response = await axios.get('https://rest.blackhistoryapi.io/fact/random', {
         headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj' },
         params: { limit: 5 },
       });
 
-      const data = response.data.Results;
+      const data = Array.isArray(response?.data?.Results) ? response.data.Results : [];
 
-      // Update state with fetched facts
-      if (data) {
+      if (data.length > 0) {
         setFacts(data);
         setCurrentFactIndex(0);
+        setIsUsingFallback(false);
       } else {
-        setFacts([
-          {
-            text: 'No information available.',
-            people: [''],
-            tags: [],
-          },
-        ]);
+        setFallbackFacts();
       }
     } catch (error) {
-      // Handle errors in fetching random facts
-      setFacts([
-        {
-          text: 'Failed to fetch random facts.',
-          people: [''],
-          tags: [],
-        },
-      ]);
+      console.error('Error fetching random facts', error);
+      setFallbackFacts();
     }
-  };
+  }, [setFallbackFacts]);
 
   useEffect(() => {
-    // Fetch random facts on component mount
     if (!isMounted.current) {
       getRandomFacts();
       isMounted.current = true;
     }
-  }, []); // Empty dependency array to only fetch on mount
+  }, [getRandomFacts]); // Empty dependency array to only fetch on mount
 
-  // Function to handle refreshing and fetching new random facts
+  useEffect(() => {
+    if (!isUsingFallback) {
+      return undefined;
+    }
+
+    const retryTimeout = setTimeout(() => {
+      getRandomFacts();
+    }, 60000);
+
+    return () => clearTimeout(retryTimeout);
+  }, [getRandomFacts, isUsingFallback]);
+
   const handleRefresh = () => {
-    getRandomFacts();
+    if (isUsingFallback) {
+      setFallbackFacts();
+      return;
+    }
+
+    if (facts.length <= 1) {
+      getRandomFacts();
+      return;
+    }
+
+    setCurrentFactIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % facts.length;
+
+      if (nextIndex === 0) {
+        getRandomFacts();
+      }
+
+      return nextIndex;
+    });
   };
+
+  const currentFact = facts[currentFactIndex] ?? FALLBACK_FACTS[0];
+  const hasSource = Boolean(currentFact?.source);
 
   return (
     <div className="hero-section bg-gradient-to-r from-green-800 via-green-600 to-green-400 bg-cover bg-center h-3/4 md:h-2/3 lg:h-1/2 flex items-center justify-center relative text-white mb-8">
@@ -70,17 +104,26 @@ const RandomFactCarousel = () => {
           Did You Know?
         </h2>
         <div className="fact-card p-8 bg-green-950 rounded-md shadow-lg text-gray-300">
-          <h3 className="text-xl md:text-2xl mb-4">{facts[currentFactIndex]?.people?.[0]}</h3>
-          <p className="text-sm md:text-base mb-2">{facts[currentFactIndex]?.tags?.join(', ')}</p>
-          <p className="text-lg md:text-xl mb-4">{facts[currentFactIndex]?.text}</p>
-          <a
-            href={facts[currentFactIndex]?.source}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-red-400 hover:text-blue-200 underline"
-          >
-            Learn More
-          </a>
+          <h3 className="text-xl md:text-2xl mb-4">{currentFact?.people?.[0]}</h3>
+          <p className="text-sm md:text-base mb-2">{currentFact?.tags?.join(', ')}</p>
+          <p className="text-lg md:text-xl mb-4">{currentFact?.text}</p>
+          {hasSource ? (
+            <a
+              href={currentFact.source}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-400 hover:text-blue-200 underline"
+            >
+              Learn More
+            </a>
+          ) : (
+            <span className="text-sm md:text-base text-yellow-200">Source unavailable</span>
+          )}
+          {isUsingFallback && (
+            <p className="text-xs md:text-sm text-yellow-300 mt-4">
+              Showing curated facts while we reconnect to the live feed.
+            </p>
+          )}
         </div>
         <button
           className="refresh-button bg-yellow-400 hover:bg-green-400 text-white px-4 py-2 mt-4 mb-8 rounded-full hover:bg-blue-600 transition duration-300"

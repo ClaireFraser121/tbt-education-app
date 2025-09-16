@@ -11,7 +11,8 @@ const FlipCard = ({ person }) => {
 
   // State for flipped status and fact
   const [isFlipped, setIsFlipped] = useState(false);
-  const [fact, setFact] = useState(person.fact);
+  const fallbackFact = person?.fallbackFact ?? 'Fun fact coming soon!';
+  const [fact, setFact] = useState(person?.fact ?? fallbackFact);
 
   // Animation controls
   const controls = useAnimation();
@@ -32,16 +33,27 @@ const FlipCard = ({ person }) => {
   // Fetch a new fact for the specified person
   const fetchNewFact = async (personName) => {
     try {
-      const response = await axios.get(`https://rest.blackhistoryapi.io/fact?people=${personName}`, {
-        headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj' },
-      });
+      const response = await axios.get(
+        `https://rest.blackhistoryapi.io/fact?people=${encodeURIComponent(personName)}`,
+        {
+          headers: { 'X-Api-Key': 'amVtU3VuIEphbiAxNCAyMDI0IDExOj' },
+        }
+      );
 
-      const facts = response.data.Results;
-      const selectedFact = facts[Math.floor(Math.random() * facts.length)];
-      return selectedFact.text;
+      const facts = response?.data?.Results ?? [];
+
+      if (Array.isArray(facts) && facts.length > 0) {
+        const selectedFact = facts[Math.floor(Math.random() * facts.length)];
+
+        if (selectedFact?.text) {
+          return selectedFact.text;
+        }
+      }
+
+      return fallbackFact;
     } catch (error) {
       console.error(`Error fetching new fact for ${personName}`, error);
-      return 'Error fetching data';
+      return fallbackFact;
     }
   };
 
